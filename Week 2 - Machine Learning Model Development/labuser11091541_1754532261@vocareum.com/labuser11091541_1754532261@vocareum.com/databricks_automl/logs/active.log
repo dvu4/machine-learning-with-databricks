@@ -1,0 +1,2218 @@
+25/08/07 05:04:18 INFO ThrottledLogger$: Configured feature flag data source LaunchDarkly
+25/08/07 05:04:18 WARN ThrottledLogger$: REGION environment variable is not defined. getConfForCurrentRegion will always return default value
+25/08/07 05:07:11 INFO ThrottledLogger$: Configured feature flag data source LaunchDarkly
+25/08/07 05:07:11 WARN ThrottledLogger$: REGION environment variable is not defined. getConfForCurrentRegion will always return default value
+25/08/07 05:07:16 INFO ThrottledLogger$: Configured feature flag data source LaunchDarkly
+25/08/07 05:07:16 WARN ThrottledLogger$: REGION environment variable is not defined. getConfForCurrentRegion will always return default value
+25/08/07 05:07:18 INFO ThrottledLogger$: Configured feature flag data source LaunchDarkly
+25/08/07 05:07:19 WARN ThrottledLogger$: REGION environment variable is not defined. getConfForCurrentRegion will always return default value
+25/08/07 05:07:21 INFO privateLog: "Common-Cleaner" #11 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@77b8f97c
+
+	java.base@17.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+
+	java.base@17.0.13/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+	java.base@17.0.13/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+25/08/07 05:07:21 INFO privateLog: "CpuUsageTracker timer, window: 1000 ms, interval: 500 ms" #106 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@6e2e34a9
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:563)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:21 INFO privateLog: "disk_health_monitor" #66 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@91caf4f
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "disk_health_monitor" #82 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5cda1b3d
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "ema-load-monitor-thread" #107 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@6221d9a2
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "Finalizer" #3 WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@37496a94
+
+	java.base@17.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+
+	java.base@17.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+
+	java.base@17.0.13/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+25/08/07 05:07:21 INFO privateLog: "FlagSettingCacheMetricsTimer" #119 WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@5b05f71c
+
+	java.base@17.0.13/java.lang.Object.wait(Object.java:338)
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:537)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:21 INFO privateLog: "globalEventExecutor-2-2" #137 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5fbe0ad5
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+
+	app//grpc_shaded.io.netty.util.concurrent.GlobalEventExecutor.takeTask(GlobalEventExecutor.java:113)
+
+	app//grpc_shaded.io.netty.util.concurrent.GlobalEventExecutor$TaskRunner.run(GlobalEventExecutor.java:259)
+
+	app//grpc_shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//grpc_shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "grpc-default-boss-ELG-1-1" #60 RUNNABLE
+	app//grpc_shaded.io.netty.channel.epoll.Native.epollWait(Native Method)
+
+	app//grpc_shaded.io.netty.channel.epoll.Native.epollWait(Native.java:209)
+
+	app//grpc_shaded.io.netty.channel.epoll.Native.epollWait(Native.java:202)
+
+	app//grpc_shaded.io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:316)
+
+	app//grpc_shaded.io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:373)
+
+	app//grpc_shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//grpc_shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//grpc_shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "heartBeatDaemon" #120 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@44111ba9
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:563)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:21 INFO privateLog: "JFR Periodic Tasks" #45 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on jdk.jfr.internal.JVM$ChunkRotationMonitor@395fd201
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder.takeNap(PlatformRecorder.java:554)
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder.periodicTask(PlatformRecorder.java:534)
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder.lambda$startDiskMonitor$1(PlatformRecorder.java:455)
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder$$Lambda$1299/0x00007fb3802f1b90.run(Unknown Source)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "LDBasedSafeFlagClient" #118 WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@69d3c166
+
+	java.base@17.0.13/java.lang.Object.wait(Object.java:338)
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:537)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:21 INFO privateLog: "main" #1 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Runtime.exit(Runtime.java:115)
+
+	java.base@17.0.13/java.lang.System.exit(System.java:1877)
+
+	app//org.apache.spark.api.python.PythonGatewayServer$.main(PythonGatewayServer.scala:75)
+
+	app//org.apache.spark.api.python.PythonGatewayServer.main(PythonGatewayServer.scala)
+
+	java.base@17.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+	java.base@17.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+
+	java.base@17.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+	java.base@17.0.13/java.lang.reflect.Method.invoke(Method.java:569)
+
+	app//org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)
+
+	app//org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:1024)
+
+	app//org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:199)
+
+	app//org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:222)
+
+	app//org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:96)
+
+	app//org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1128)
+
+	app//org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1137)
+
+	app//org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+
+25/08/07 05:07:21 INFO privateLog: "node_status_monitor" #73 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@693e0a3f
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "node_status_monitor" #83 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1b52157d
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "Notification Thread" #12 RUNNABLE
+	
+25/08/07 05:07:21 INFO privateLog: "process reaper" #14 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@5eb7dea5
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+
+	java.base@17.0.13/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "Reference Handler" #2 RUNNABLE
+	java.base@17.0.13/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+
+	java.base@17.0.13/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+
+	java.base@17.0.13/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+25/08/07 05:07:21 INFO privateLog: "rpc-boss-3-1" #22 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "rpc-client-1-1" #150 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "rpc-client-1-2" #151 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "rpc-client-1-3" #152 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "rpc-client-1-4" #153 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "rpc-server-4-1" #146 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "rpc-server-4-2" #147 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "rpc-server-4-3" #148 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "rpc-server-4-4" #149 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "scheduler-stats-logger" #104 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@7758b78f
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "shuffle-boss-6-1" #88 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "shuffle-client-5-1" #142 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "shuffle-client-5-2" #143 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "shuffle-client-5-3" #144 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "shuffle-client-5-4" #145 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "shuffle-server-7-1" #138 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "shuffle-server-7-2" #139 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "shuffle-server-7-3" #140 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "shuffle-server-7-4" #141 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "shutdown-hook-0" #122 RUNNABLE holding [java.util.concurrent.ThreadPoolExecutor$Worker@16ba536b]
+	java.management@17.0.13/sun.management.ThreadImpl.dumpThreads0(Native Method)
+
+	java.management@17.0.13/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:528)
+
+	java.management@17.0.13/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:516)
+
+	app//org.apache.spark.util.Utils$.getThreadDump(Utils.scala:2592)
+
+	app//org.apache.spark.util.Utils$.logThreadDump(Utils.scala:2712)
+
+	app//org.apache.spark.util.Utils$.$anonfun$addThreadDumpShutdownHook$1(Utils.scala:2705)
+
+	app//org.apache.spark.util.Utils$$$Lambda$1040/0x00007fb38065d520.apply$mcV$sp(Unknown Source)
+
+	app//org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:237)
+
+	app//org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:211)
+
+	app//org.apache.spark.util.SparkShutdownHookManager$$Lambda$3285/0x00007fb381182a58.apply$mcV$sp(Unknown Source)
+
+	app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+
+	app//org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:2377)
+
+	app//org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:211)
+
+	app//org.apache.spark.util.SparkShutdownHookManager$$Lambda$3284/0x00007fb381182760.apply$mcV$sp(Unknown Source)
+
+	app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+
+	app//scala.util.Try$.apply(Try.scala:213)
+
+	app//org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:211)
+
+	app//org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:190)
+
+	java.base@17.0.13/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+
+	java.base@17.0.13/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "Signal Dispatcher" #4 RUNNABLE
+	
+25/08/07 05:07:21 INFO privateLog: "SIGTERM handler" #121 WAITING holding [java.lang.Class@5e91993f]
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on org.apache.hadoop.util.ShutdownHookManager$1@7c47e077
+
+	java.base@17.0.13/java.lang.Thread.join(Thread.java:1313)
+
+	java.base@17.0.13/java.lang.Thread.join(Thread.java:1381)
+
+	java.base@17.0.13/java.lang.ApplicationShutdownHooks.runHooks(ApplicationShutdownHooks.java:107)
+
+	java.base@17.0.13/java.lang.ApplicationShutdownHooks$1.run(ApplicationShutdownHooks.java:46)
+
+	java.base@17.0.13/java.lang.Shutdown.runHooks(Shutdown.java:130)
+
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:173)
+	-  locked java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "SIGTERM handler" #123 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "SIGTERM handler" #124 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "SIGTERM handler" #125 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "SIGTERM handler" #128 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "SIGTERM handler" #134 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "SIGTERM handler" #135 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "Thread-0" #15 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.FutureTask@28113640
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:444)
+
+	java.base@17.0.13/java.util.concurrent.FutureTask.get(FutureTask.java:203)
+
+	app//org.apache.hadoop.util.ShutdownHookManager.executeShutdown(ShutdownHookManager.java:124)
+
+	app//org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:95)
+
+25/08/07 05:07:21 INFO privateLog: "Thread-2" #17 RUNNABLE holding [java.util.concurrent.locks.ReentrantLock$NonfairSync@453e1df8]
+	java.base@17.0.13/sun.nio.ch.Net.accept(Native Method)
+
+	java.base@17.0.13/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:760)
+
+	java.base@17.0.13/java.net.ServerSocket.implAccept(ServerSocket.java:686)
+
+	java.base@17.0.13/java.net.ServerSocket.platformImplAccept(ServerSocket.java:652)
+
+	java.base@17.0.13/java.net.ServerSocket.implAccept(ServerSocket.java:628)
+
+	java.base@17.0.13/java.net.ServerSocket.implAccept(ServerSocket.java:585)
+
+	java.base@17.0.13/java.net.ServerSocket.accept(ServerSocket.java:538)
+
+	app//py4j.GatewayServer.run(GatewayServer.java:705)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO privateLog: "Thread-23" #78 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//com.databricks.spark.util.ExternalLogAggregator.run(ExternalLogAggregator.scala:106)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:21 INFO ThrottledLogger$: Configured feature flag data source LaunchDarkly
+25/08/07 05:07:21 WARN ThrottledLogger$: REGION environment variable is not defined. getConfForCurrentRegion will always return default value
+25/08/07 05:07:24 INFO privateLog: "Common-Cleaner" #11 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@a154056
+
+	java.base@17.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+
+	java.base@17.0.13/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+	java.base@17.0.13/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+25/08/07 05:07:24 INFO privateLog: "CpuUsageTracker timer, window: 1000 ms, interval: 500 ms" #106 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@22af6868
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:563)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:24 INFO privateLog: "disk_health_monitor" #66 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@3a816242
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "disk_health_monitor" #82 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4504cb56
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "ema-load-monitor-thread" #107 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@41124910
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "Finalizer" #3 WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@8f70841
+
+	java.base@17.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+
+	java.base@17.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+
+	java.base@17.0.13/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+25/08/07 05:07:24 INFO privateLog: "FlagSettingCacheMetricsTimer" #115 WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@6774c9b6
+
+	java.base@17.0.13/java.lang.Object.wait(Object.java:338)
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:537)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:24 INFO privateLog: "globalEventExecutor-2-2" #136 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@69856daa
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+
+	app//grpc_shaded.io.netty.util.concurrent.GlobalEventExecutor.takeTask(GlobalEventExecutor.java:113)
+
+	app//grpc_shaded.io.netty.util.concurrent.GlobalEventExecutor$TaskRunner.run(GlobalEventExecutor.java:259)
+
+	app//grpc_shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//grpc_shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "grpc-default-boss-ELG-1-1" #60 RUNNABLE
+	app//grpc_shaded.io.netty.channel.epoll.Native.epollWait(Native Method)
+
+	app//grpc_shaded.io.netty.channel.epoll.Native.epollWait(Native.java:209)
+
+	app//grpc_shaded.io.netty.channel.epoll.Native.epollWait(Native.java:202)
+
+	app//grpc_shaded.io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:316)
+
+	app//grpc_shaded.io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:373)
+
+	app//grpc_shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//grpc_shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//grpc_shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "heartBeatDaemon" #116 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@3ec10118
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:563)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:24 INFO privateLog: "JFR Periodic Tasks" #45 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on jdk.jfr.internal.JVM$ChunkRotationMonitor@1ab696b2
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder.takeNap(PlatformRecorder.java:554)
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder.periodicTask(PlatformRecorder.java:534)
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder.lambda$startDiskMonitor$1(PlatformRecorder.java:455)
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder$$Lambda$1297/0x00007f2aa0762910.run(Unknown Source)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "LDBasedSafeFlagClient" #114 WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@642c0cb6
+
+	java.base@17.0.13/java.lang.Object.wait(Object.java:338)
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:537)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:24 INFO privateLog: "main" #1 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Runtime.exit(Runtime.java:115)
+
+	java.base@17.0.13/java.lang.System.exit(System.java:1877)
+
+	app//org.apache.spark.api.python.PythonGatewayServer$.main(PythonGatewayServer.scala:75)
+
+	app//org.apache.spark.api.python.PythonGatewayServer.main(PythonGatewayServer.scala)
+
+	java.base@17.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+	java.base@17.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+
+	java.base@17.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+	java.base@17.0.13/java.lang.reflect.Method.invoke(Method.java:569)
+
+	app//org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)
+
+	app//org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:1024)
+
+	app//org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:199)
+
+	app//org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:222)
+
+	app//org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:96)
+
+	app//org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1128)
+
+	app//org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1137)
+
+	app//org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+
+25/08/07 05:07:24 INFO privateLog: "node_status_monitor" #73 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@76b1cdab
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "node_status_monitor" #83 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@6b29d642
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "Notification Thread" #12 RUNNABLE
+	
+25/08/07 05:07:24 INFO privateLog: "process reaper" #14 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@351f2c7d
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+
+	java.base@17.0.13/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "Reference Handler" #2 RUNNABLE
+	java.base@17.0.13/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+
+	java.base@17.0.13/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+
+	java.base@17.0.13/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+25/08/07 05:07:24 INFO privateLog: "rpc-boss-3-1" #22 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "rpc-client-1-1" #150 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "rpc-client-1-2" #151 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "rpc-client-1-3" #152 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "rpc-client-1-4" #153 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "rpc-server-4-1" #146 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "rpc-server-4-2" #147 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "rpc-server-4-3" #148 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "rpc-server-4-4" #149 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "scheduler-stats-logger" #104 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5a0b2a17
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "shuffle-boss-6-1" #88 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "shuffle-client-5-1" #141 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "shuffle-client-5-2" #142 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "shuffle-client-5-3" #143 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "shuffle-client-5-4" #144 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "shuffle-server-7-1" #137 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "shuffle-server-7-2" #138 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "shuffle-server-7-3" #139 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "shuffle-server-7-4" #140 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "shutdown-hook-0" #122 RUNNABLE holding [java.util.concurrent.ThreadPoolExecutor$Worker@52400920]
+	java.management@17.0.13/sun.management.ThreadImpl.dumpThreads0(Native Method)
+
+	java.management@17.0.13/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:528)
+
+	java.management@17.0.13/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:516)
+
+	app//org.apache.spark.util.Utils$.getThreadDump(Utils.scala:2592)
+
+	app//org.apache.spark.util.Utils$.logThreadDump(Utils.scala:2712)
+
+	app//org.apache.spark.util.Utils$.$anonfun$addThreadDumpShutdownHook$1(Utils.scala:2705)
+
+	app//org.apache.spark.util.Utils$$$Lambda$1040/0x00007f2aa065db10.apply$mcV$sp(Unknown Source)
+
+	app//org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:237)
+
+	app//org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:211)
+
+	app//org.apache.spark.util.SparkShutdownHookManager$$Lambda$3286/0x00007f2aa1181908.apply$mcV$sp(Unknown Source)
+
+	app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+
+	app//org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:2377)
+
+	app//org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:211)
+
+	app//org.apache.spark.util.SparkShutdownHookManager$$Lambda$3285/0x00007f2aa1181610.apply$mcV$sp(Unknown Source)
+
+	app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+
+	app//scala.util.Try$.apply(Try.scala:213)
+
+	app//org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:211)
+
+	app//org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:190)
+
+	java.base@17.0.13/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+
+	java.base@17.0.13/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "Signal Dispatcher" #4 RUNNABLE
+	
+25/08/07 05:07:24 INFO privateLog: "SIGTERM handler" #121 WAITING holding [java.lang.Class@5e91993f]
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on org.apache.hadoop.util.ShutdownHookManager$1@7c47e077
+
+	java.base@17.0.13/java.lang.Thread.join(Thread.java:1313)
+
+	java.base@17.0.13/java.lang.Thread.join(Thread.java:1381)
+
+	java.base@17.0.13/java.lang.ApplicationShutdownHooks.runHooks(ApplicationShutdownHooks.java:107)
+
+	java.base@17.0.13/java.lang.ApplicationShutdownHooks$1.run(ApplicationShutdownHooks.java:46)
+
+	java.base@17.0.13/java.lang.Shutdown.runHooks(Shutdown.java:130)
+
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:173)
+	-  locked java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "SIGTERM handler" #123 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "SIGTERM handler" #124 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "SIGTERM handler" #125 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "SIGTERM handler" #133 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "SIGTERM handler" #134 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "SIGTERM handler" #145 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "Thread-0" #15 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.FutureTask@6dc89519
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:444)
+
+	java.base@17.0.13/java.util.concurrent.FutureTask.get(FutureTask.java:203)
+
+	app//org.apache.hadoop.util.ShutdownHookManager.executeShutdown(ShutdownHookManager.java:124)
+
+	app//org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:95)
+
+25/08/07 05:07:24 INFO privateLog: "Thread-2" #17 RUNNABLE holding [java.util.concurrent.locks.ReentrantLock$NonfairSync@2a3336b5]
+	java.base@17.0.13/sun.nio.ch.Net.accept(Native Method)
+
+	java.base@17.0.13/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:760)
+
+	java.base@17.0.13/java.net.ServerSocket.implAccept(ServerSocket.java:686)
+
+	java.base@17.0.13/java.net.ServerSocket.platformImplAccept(ServerSocket.java:652)
+
+	java.base@17.0.13/java.net.ServerSocket.implAccept(ServerSocket.java:628)
+
+	java.base@17.0.13/java.net.ServerSocket.implAccept(ServerSocket.java:585)
+
+	java.base@17.0.13/java.net.ServerSocket.accept(ServerSocket.java:538)
+
+	app//py4j.GatewayServer.run(GatewayServer.java:705)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:24 INFO privateLog: "Thread-23" #78 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//com.databricks.spark.util.ExternalLogAggregator.run(ExternalLogAggregator.scala:106)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "Common-Cleaner" #11 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@28ea0fb5
+
+	java.base@17.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+
+	java.base@17.0.13/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+	java.base@17.0.13/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+25/08/07 05:07:27 INFO privateLog: "CpuUsageTracker timer, window: 1000 ms, interval: 500 ms" #106 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@1101f9ff
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:563)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:27 INFO privateLog: "disk_health_monitor" #66 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@78e17c07
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "disk_health_monitor" #82 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@53616598
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "ema-load-monitor-thread" #107 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@499413e2
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "Finalizer" #3 WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@74bee9c8
+
+	java.base@17.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+
+	java.base@17.0.13/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+
+	java.base@17.0.13/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+25/08/07 05:07:27 INFO privateLog: "FlagSettingCacheMetricsTimer" #113 WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@288cd2e4
+
+	java.base@17.0.13/java.lang.Object.wait(Object.java:338)
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:537)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:27 INFO privateLog: "globalEventExecutor-2-2" #137 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@187a19
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+
+	app//grpc_shaded.io.netty.util.concurrent.GlobalEventExecutor.takeTask(GlobalEventExecutor.java:113)
+
+	app//grpc_shaded.io.netty.util.concurrent.GlobalEventExecutor$TaskRunner.run(GlobalEventExecutor.java:259)
+
+	app//grpc_shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//grpc_shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "grpc-default-boss-ELG-1-1" #60 RUNNABLE
+	app//grpc_shaded.io.netty.channel.epoll.Native.epollWait(Native Method)
+
+	app//grpc_shaded.io.netty.channel.epoll.Native.epollWait(Native.java:209)
+
+	app//grpc_shaded.io.netty.channel.epoll.Native.epollWait(Native.java:202)
+
+	app//grpc_shaded.io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:316)
+
+	app//grpc_shaded.io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:373)
+
+	app//grpc_shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//grpc_shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//grpc_shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "heartBeatDaemon" #116 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@365c080b
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:563)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:27 INFO privateLog: "JFR Periodic Tasks" #45 TIMED_WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on jdk.jfr.internal.JVM$ChunkRotationMonitor@8e4c04
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder.takeNap(PlatformRecorder.java:554)
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder.periodicTask(PlatformRecorder.java:534)
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder.lambda$startDiskMonitor$1(PlatformRecorder.java:455)
+
+	jdk.jfr@17.0.13/jdk.jfr.internal.PlatformRecorder$$Lambda$1305/0x00007f572c768488.run(Unknown Source)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "LDBasedSafeFlagClient" #111 WAITING
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@7cb0651
+
+	java.base@17.0.13/java.lang.Object.wait(Object.java:338)
+
+	java.base@17.0.13/java.util.TimerThread.mainLoop(Timer.java:537)
+
+	java.base@17.0.13/java.util.TimerThread.run(Timer.java:516)
+
+25/08/07 05:07:27 INFO privateLog: "main" #1 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Runtime.exit(Runtime.java:115)
+
+	java.base@17.0.13/java.lang.System.exit(System.java:1877)
+
+	app//org.apache.spark.api.python.PythonGatewayServer$.main(PythonGatewayServer.scala:75)
+
+	app//org.apache.spark.api.python.PythonGatewayServer.main(PythonGatewayServer.scala)
+
+	java.base@17.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+	java.base@17.0.13/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+
+	java.base@17.0.13/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+
+	java.base@17.0.13/java.lang.reflect.Method.invoke(Method.java:569)
+
+	app//org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)
+
+	app//org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:1024)
+
+	app//org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:199)
+
+	app//org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:222)
+
+	app//org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:96)
+
+	app//org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1128)
+
+	app//org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1137)
+
+	app//org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+
+25/08/07 05:07:27 INFO privateLog: "node_status_monitor" #73 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@38df724c
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "node_status_monitor" #83 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@21fdfd9c
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "Notification Thread" #12 RUNNABLE
+	
+25/08/07 05:07:27 INFO privateLog: "process reaper" #14 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@7d07af38
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+
+	java.base@17.0.13/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "Reference Handler" #2 RUNNABLE
+	java.base@17.0.13/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+
+	java.base@17.0.13/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+
+	java.base@17.0.13/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+25/08/07 05:07:27 INFO privateLog: "rpc-boss-3-1" #22 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "rpc-client-1-1" #150 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "rpc-client-1-2" #151 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "rpc-client-1-3" #152 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "rpc-client-1-4" #153 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "rpc-server-4-1" #146 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "rpc-server-4-2" #147 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "rpc-server-4-3" #148 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "rpc-server-4-4" #149 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "scheduler-stats-logger" #104 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@520face0
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+
+	java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "shuffle-boss-6-1" #88 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "shuffle-client-5-1" #142 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "shuffle-client-5-2" #143 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "shuffle-client-5-3" #144 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "shuffle-client-5-4" #145 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "shuffle-server-7-1" #138 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "shuffle-server-7-2" #139 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "shuffle-server-7-3" #140 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "shuffle-server-7-4" #141 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor.confirmShutdown(SingleThreadEventExecutor.java:790)
+
+	app//io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:596)
+
+	app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+
+	app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+
+	app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "shutdown-hook-0" #122 RUNNABLE holding [java.util.concurrent.ThreadPoolExecutor$Worker@13cbf24e]
+	java.management@17.0.13/sun.management.ThreadImpl.dumpThreads0(Native Method)
+
+	java.management@17.0.13/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:528)
+
+	java.management@17.0.13/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:516)
+
+	app//org.apache.spark.util.Utils$.getThreadDump(Utils.scala:2592)
+
+	app//org.apache.spark.util.Utils$.logThreadDump(Utils.scala:2712)
+
+	app//org.apache.spark.util.Utils$.$anonfun$addThreadDumpShutdownHook$1(Utils.scala:2705)
+
+	app//org.apache.spark.util.Utils$$$Lambda$1040/0x00007f572c65d520.apply$mcV$sp(Unknown Source)
+
+	app//org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:237)
+
+	app//org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:211)
+
+	app//org.apache.spark.util.SparkShutdownHookManager$$Lambda$3287/0x00007f572d184990.apply$mcV$sp(Unknown Source)
+
+	app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+
+	app//org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:2377)
+
+	app//org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:211)
+
+	app//org.apache.spark.util.SparkShutdownHookManager$$Lambda$3286/0x00007f572d184698.apply$mcV$sp(Unknown Source)
+
+	app//scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+
+	app//scala.util.Try$.apply(Try.scala:213)
+
+	app//org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:211)
+
+	app//org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:190)
+
+	java.base@17.0.13/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+
+	java.base@17.0.13/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+
+	java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "Signal Dispatcher" #4 RUNNABLE
+	
+25/08/07 05:07:27 INFO privateLog: "SIGTERM handler" #121 WAITING holding [java.lang.Class@5e91993f]
+	java.base@17.0.13/java.lang.Object.wait(Native Method)
+	-  waiting on org.apache.hadoop.util.ShutdownHookManager$1@7c47e077
+
+	java.base@17.0.13/java.lang.Thread.join(Thread.java:1313)
+
+	java.base@17.0.13/java.lang.Thread.join(Thread.java:1381)
+
+	java.base@17.0.13/java.lang.ApplicationShutdownHooks.runHooks(ApplicationShutdownHooks.java:107)
+
+	java.base@17.0.13/java.lang.ApplicationShutdownHooks$1.run(ApplicationShutdownHooks.java:46)
+
+	java.base@17.0.13/java.lang.Shutdown.runHooks(Shutdown.java:130)
+
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:173)
+	-  locked java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "SIGTERM handler" #123 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "SIGTERM handler" #124 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "SIGTERM handler" #125 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "SIGTERM handler" #126 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "SIGTERM handler" #134 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "SIGTERM handler" #135 BLOCKED blocked by Thread #121(Lock(java.lang.Class@5e91993f))
+	java.base@17.0.13/java.lang.Shutdown.exit(Shutdown.java:172)
+	-  blocked on java.lang.Class@5e91993f
+
+	java.base@17.0.13/java.lang.Terminator$1.handle(Terminator.java:51)
+
+	java.base@17.0.13/jdk.internal.misc.Signal$1.run(Signal.java:219)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "Thread-0" #15 TIMED_WAITING
+	java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.FutureTask@5f3e1621
+
+	java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+
+	java.base@17.0.13/java.util.concurrent.FutureTask.awaitDone(FutureTask.java:444)
+
+	java.base@17.0.13/java.util.concurrent.FutureTask.get(FutureTask.java:203)
+
+	app//org.apache.hadoop.util.ShutdownHookManager.executeShutdown(ShutdownHookManager.java:124)
+
+	app//org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:95)
+
+25/08/07 05:07:27 INFO privateLog: "Thread-2" #17 RUNNABLE holding [java.util.concurrent.locks.ReentrantLock$NonfairSync@3fd051a]
+	java.base@17.0.13/sun.nio.ch.Net.accept(Native Method)
+
+	java.base@17.0.13/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:760)
+
+	java.base@17.0.13/java.net.ServerSocket.implAccept(ServerSocket.java:686)
+
+	java.base@17.0.13/java.net.ServerSocket.platformImplAccept(ServerSocket.java:652)
+
+	java.base@17.0.13/java.net.ServerSocket.implAccept(ServerSocket.java:628)
+
+	java.base@17.0.13/java.net.ServerSocket.implAccept(ServerSocket.java:585)
+
+	java.base@17.0.13/java.net.ServerSocket.accept(ServerSocket.java:538)
+
+	app//py4j.GatewayServer.run(GatewayServer.java:705)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+
+25/08/07 05:07:27 INFO privateLog: "Thread-23" #78 TIMED_WAITING
+	java.base@17.0.13/java.lang.Thread.sleep(Native Method)
+
+	app//com.databricks.spark.util.ExternalLogAggregator.run(ExternalLogAggregator.scala:106)
+
+	java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+

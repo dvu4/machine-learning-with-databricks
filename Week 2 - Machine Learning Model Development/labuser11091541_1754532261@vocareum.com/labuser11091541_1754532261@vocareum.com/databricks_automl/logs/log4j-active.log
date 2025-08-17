@@ -1,0 +1,1888 @@
+25/08/07 05:01:08 INFO DatabricksEdgeConfigs: serverlessEnabled : false
+25/08/07 05:01:11 INFO DatabricksEdgeConfigs: perfPackEnabled : false
+25/08/07 05:01:11 INFO DatabricksEdgeConfigs: classicSqlEnabled : false
+25/08/07 05:01:13 INFO RawConfigSingleton$: Successfully loaded DB_CONF into RawConfigSingleton.
+25/08/07 05:01:13 INFO GlobalConf$$anon$1: 
+Location Old Values:
+  - shardAlias: None
+  - realShardName: null
+  - realShardNameOpt: None
+  - shardName: null
+  - shardNameOpt: None
+  - branch: development
+  - region: us-west-2
+  - runtime: default
+  - workerNamePrefix: null
+  - deploymentMode: development
+  - shardCloud: unknown
+
+Location New Values:
+  - location: 
+    
+25/08/07 05:01:15 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:01:15 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:01:15 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:01:15 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:01:15 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:01:15 INFO SparkContext: Running Spark version 3.5.2
+25/08/07 05:01:15 INFO SparkContext: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:01:15 INFO SparkContext: Java version 17.0.13
+25/08/07 05:01:15 INFO ResourceUtils: ==============================================================
+25/08/07 05:01:15 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/08/07 05:01:15 INFO ResourceUtils: ==============================================================
+25/08/07 05:01:15 INFO SparkContext: Submitted application: pyspark-shell
+25/08/07 05:01:16 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/08/07 05:01:16 INFO ResourceProfile: Limiting resource is cpu
+25/08/07 05:01:16 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/08/07 05:01:16 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:01:16 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:01:16 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:01:16 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:01:16 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:01:16 INFO JvmCrashLogger: Past JVM crashes: detected 0, logged 0, and skipped 0 already logged
+25/08/07 05:01:18 INFO Utils: Successfully started service 'sparkDriver' on port 36119.
+25/08/07 05:01:18 INFO SparkEnv: Registering MapOutputTracker
+25/08/07 05:01:18 INFO SparkEnv: Registering BlockManagerMaster
+25/08/07 05:01:18 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/08/07 05:01:19 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/08/07 05:01:19 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/08/07 05:01:19 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-4e2c3314-7c12-47f0-941e-c6e946ae645f
+25/08/07 05:01:19 INFO SparkEnv: Registering OutputCommitCoordinator
+25/08/07 05:01:19 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+25/08/07 05:01:20 INFO ErrorEventListener: Configured monitoring unexpected Java module errors with a throttling threshold of 5 unique events per 10 minutes
+25/08/07 05:01:20 INFO JfrStreamingManager: Started JFR stream JDK17 HMR
+25/08/07 05:01:21 INFO log: Logging initialized @32821ms to org.eclipse.jetty.util.log.Slf4jLog
+25/08/07 05:01:24 INFO JettyUtils: Start Jetty 10.3.57.10:4040 for SparkUI
+25/08/07 05:01:24 INFO Server: jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.13+11-LTS
+25/08/07 05:01:25 INFO Server: Started @37487ms
+25/08/07 05:01:26 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+25/08/07 05:01:26 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+25/08/07 05:01:26 INFO AbstractConnector: Started ServerConnector@ac741fc{HTTP/1.1, (http/1.1)}{10.3.57.10:4042}
+25/08/07 05:01:26 INFO Utils: Successfully started service 'SparkUI' on port 4042.
+25/08/07 05:01:27 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2732ad26{/,null,AVAILABLE,@Spark}
+25/08/07 05:01:31 ERROR SparkConnectService: Could not start Spark Connect GRPC service
+java.io.IOException: Failed to bind to address 0.0.0.0/0.0.0.0:15002
+	at grpc_shaded.io.grpc.netty.NettyServer.start(NettyServer.java:333)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:185)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:94)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.startGRPCService(SparkConnectService.scala:459)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.start(SparkConnectService.scala:468)
+	at org.apache.spark.sql.connect.SparkConnectPlugin$$anon$1.init(SparkConnectPlugin.scala:100)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.$anonfun$driverPlugins$1(PluginContainer.scala:57)
+	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:293)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:293)
+	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:290)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.<init>(PluginContainer.scala:50)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:235)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:200)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:938)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:61)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:397)
+	at py4j.Gateway.invoke(Gateway.java:257)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:199)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:119)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: grpc_shaded.io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+25/08/07 05:01:31 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.sql.connect.SparkConnectPlugin.
+25/08/07 05:01:31 INFO DLTDebugger: Registered DLTDebuggerEndpoint at endpoint dlt-debugger
+25/08/07 05:01:32 INFO LocalSparkConnectService: Adjusted permissions on /databricks/sparkconnect/grpc.sock: chown:1 chmod:0
+25/08/07 05:01:33 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:01:33 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:01:33 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:01:33 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:01:33 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:01:33 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:01:34 INFO Executor: Starting executor ID driver on host ip-10-3-57-10.us-west-2.compute.internal
+25/08/07 05:01:34 INFO Executor: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:01:34 INFO Executor: Java version 17.0.13
+25/08/07 05:01:34 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/08/07 05:01:34 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@30477ff4 for default.
+25/08/07 05:01:34 INFO ExecutorPluginContainer: Initialized executor component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:01:34 INFO Utils: resolved command to be run: ArraySeq(getconf, PAGESIZE)
+25/08/07 05:01:35 WARN NativeMemoryWatchdog: Native memory watchdog is disabled by conf.
+25/08/07 05:01:36 INFO TaskSchedulerImpl: Preemption disabled in FIFO scheduling mode.
+25/08/07 05:01:36 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42561.
+25/08/07 05:01:36 INFO NettyBlockTransferService: Server created on ip-10-3-57-10.us-west-2.compute.internal:42561
+25/08/07 05:01:36 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/08/07 05:01:36 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 42561, None)
+25/08/07 05:01:36 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-3-57-10.us-west-2.compute.internal:42561 with 434.4 MiB RAM, BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 42561, None)
+25/08/07 05:01:36 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 42561, None)
+25/08/07 05:01:36 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 42561, None)
+25/08/07 05:01:44 INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@2732ad26{/,null,STOPPED,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@11ba93b6{/jobs,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1072b6ce{/jobs/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7860dcfb{/jobs/job,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2d9f99ea{/jobs/job/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@20be5640{/stages,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@27b99d5c{/stages/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6839409b{/stages/stage,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@42f9ec50{/stages/stage/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6c849219{/stages/pool,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@75598118{/stages/pool/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2affc69b{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1012410e{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3a7478ac{/storage,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@43ce019b{/storage/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@69394220{/storage/rdd,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2afa5728{/storage/rdd/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@76334af1{/environment,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4d3af0e4{/environment/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@354fa776{/executors,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1742a546{/executors/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3e8b3c16{/executors/threadDump,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1fe95753{/executors/threadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@34934a3f{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@61dfb5b3{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@613ce62e{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@8b8da0{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4d61f27a{/static,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@48ba6429{/,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7213124{/api,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@11c7f547{/metrics,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@230872a9{/jobs/job/kill,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5e6334bb{/stages/stage/kill,null,AVAILABLE,@Spark}
+25/08/07 05:01:44 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@48a2ebe7{/metrics/json,null,AVAILABLE,@Spark}
+25/08/07 05:01:54 INFO DatabricksEdgeConfigs: serverlessEnabled : false
+25/08/07 05:01:56 INFO DatabricksEdgeConfigs: perfPackEnabled : false
+25/08/07 05:01:56 INFO DatabricksEdgeConfigs: classicSqlEnabled : false
+25/08/07 05:01:57 INFO RawConfigSingleton$: Successfully loaded DB_CONF into RawConfigSingleton.
+25/08/07 05:01:57 INFO GlobalConf$$anon$1: 
+Location Old Values:
+  - shardAlias: None
+  - realShardName: null
+  - realShardNameOpt: None
+  - shardName: null
+  - shardNameOpt: None
+  - branch: development
+  - region: us-west-2
+  - runtime: default
+  - workerNamePrefix: null
+  - deploymentMode: development
+  - shardCloud: unknown
+
+Location New Values:
+  - location: 
+    
+25/08/07 05:01:59 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:01:59 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:01:59 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:01:59 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:01:59 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:01:59 INFO SparkContext: Running Spark version 3.5.2
+25/08/07 05:01:59 INFO SparkContext: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:01:59 INFO SparkContext: Java version 17.0.13
+25/08/07 05:01:59 INFO ResourceUtils: ==============================================================
+25/08/07 05:01:59 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/08/07 05:01:59 INFO ResourceUtils: ==============================================================
+25/08/07 05:01:59 INFO SparkContext: Submitted application: pyspark-shell
+25/08/07 05:01:59 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/08/07 05:01:59 INFO ResourceProfile: Limiting resource is cpu
+25/08/07 05:02:00 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/08/07 05:02:00 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:02:00 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:02:00 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:02:00 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:02:00 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:02:00 INFO JvmCrashLogger: Past JVM crashes: detected 0, logged 0, and skipped 0 already logged
+25/08/07 05:02:01 INFO Utils: Successfully started service 'sparkDriver' on port 46415.
+25/08/07 05:02:01 INFO SparkEnv: Registering MapOutputTracker
+25/08/07 05:02:01 INFO SparkEnv: Registering BlockManagerMaster
+25/08/07 05:02:01 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/08/07 05:02:01 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/08/07 05:02:01 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/08/07 05:02:01 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-3f6db3da-ec38-4c89-904d-0f56dcb9ae07
+25/08/07 05:02:01 INFO SparkEnv: Registering OutputCommitCoordinator
+25/08/07 05:02:01 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+25/08/07 05:02:02 INFO ErrorEventListener: Configured monitoring unexpected Java module errors with a throttling threshold of 5 unique events per 10 minutes
+25/08/07 05:02:02 INFO JfrStreamingManager: Started JFR stream JDK17 HMR
+25/08/07 05:02:02 INFO log: Logging initialized @20566ms to org.eclipse.jetty.util.log.Slf4jLog
+25/08/07 05:02:04 INFO JettyUtils: Start Jetty 10.3.57.10:4040 for SparkUI
+25/08/07 05:02:04 INFO Server: jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.13+11-LTS
+25/08/07 05:02:05 INFO Server: Started @23162ms
+25/08/07 05:02:05 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+25/08/07 05:02:05 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+25/08/07 05:02:05 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+25/08/07 05:02:06 INFO AbstractConnector: Started ServerConnector@6d5da37b{HTTP/1.1, (http/1.1)}{10.3.57.10:4043}
+25/08/07 05:02:06 INFO Utils: Successfully started service 'SparkUI' on port 4043.
+25/08/07 05:02:06 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@37ab2b4c{/,null,AVAILABLE,@Spark}
+25/08/07 05:02:08 ERROR SparkConnectService: Could not start Spark Connect GRPC service
+java.io.IOException: Failed to bind to address 0.0.0.0/0.0.0.0:15002
+	at grpc_shaded.io.grpc.netty.NettyServer.start(NettyServer.java:333)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:185)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:94)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.startGRPCService(SparkConnectService.scala:459)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.start(SparkConnectService.scala:468)
+	at org.apache.spark.sql.connect.SparkConnectPlugin$$anon$1.init(SparkConnectPlugin.scala:100)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.$anonfun$driverPlugins$1(PluginContainer.scala:57)
+	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:293)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:293)
+	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:290)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.<init>(PluginContainer.scala:50)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:235)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:200)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:938)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:61)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:397)
+	at py4j.Gateway.invoke(Gateway.java:257)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:199)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:119)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: grpc_shaded.io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+25/08/07 05:02:09 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.sql.connect.SparkConnectPlugin.
+25/08/07 05:02:09 INFO DLTDebugger: Registered DLTDebuggerEndpoint at endpoint dlt-debugger
+25/08/07 05:02:09 INFO LocalSparkConnectService: Adjusted permissions on /databricks/sparkconnect/grpc.sock: chown:1 chmod:0
+25/08/07 05:02:09 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:02:10 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:02:10 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:02:10 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:02:10 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:02:10 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:02:10 INFO Executor: Starting executor ID driver on host ip-10-3-57-10.us-west-2.compute.internal
+25/08/07 05:02:10 INFO Executor: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:02:10 INFO Executor: Java version 17.0.13
+25/08/07 05:02:10 ERROR FuseLogAggregator: 2025/08/07 05:02:09.443037 main.FATAL Mounting file system: Mount: mount: running /usr/bin/fusermount: exit status 1
+25/08/07 05:02:10 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/08/07 05:02:10 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@a707a5e for default.
+25/08/07 05:02:10 INFO ExecutorPluginContainer: Initialized executor component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:02:10 INFO Utils: resolved command to be run: ArraySeq(getconf, PAGESIZE)
+25/08/07 05:02:12 WARN NativeMemoryWatchdog: Native memory watchdog is disabled by conf.
+25/08/07 05:02:12 INFO TaskSchedulerImpl: Preemption disabled in FIFO scheduling mode.
+25/08/07 05:02:12 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37973.
+25/08/07 05:02:12 INFO NettyBlockTransferService: Server created on ip-10-3-57-10.us-west-2.compute.internal:37973
+25/08/07 05:02:12 ERROR Inbox: Ignoring error
+java.lang.IllegalStateException: Shutdown hooks cannot be modified during shutdown.
+	at org.apache.spark.util.SparkShutdownHookManager.add(ShutdownHookManager.scala:218)
+	at org.apache.spark.util.ShutdownHookManager$.addShutdownHook(ShutdownHookManager.scala:165)
+	at org.apache.spark.util.ShutdownHookManager$.addShutdownHook(ShutdownHookManager.scala:154)
+	at org.apache.spark.scheduler.HealthTracker.<init>(HealthTracker.scala:702)
+	at org.apache.spark.scheduler.TaskSchedulerInternal$.maybeCreateHealthTracker(TaskSchedulerInternal.scala:473)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.healthTrackerOpt$lzycompute(TaskSchedulerImpl.scala:102)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.healthTrackerOpt(TaskSchedulerImpl.scala:102)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.$anonfun$resourceOffers$2(TaskSchedulerImpl.scala:652)
+	at com.databricks.spark.scheduler.SchedulerProfiler$.time(SchedulerProfiler.scala:172)
+	at com.databricks.spark.scheduler.SchedulerProfiler$.$anonfun$getTimer$2(SchedulerProfiler.scala:164)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.$anonfun$resourceOffers$1(TaskSchedulerImpl.scala:628)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:94)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.resourceOffers(TaskSchedulerImpl.scala:628)
+	at org.apache.spark.scheduler.TaskSchedulerInternal.$anonfun$scheduleAndLaunchTasks$1(TaskSchedulerInternal.scala:204)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.spark.util.FrameProfiler$.record(FrameProfiler.scala:94)
+	at org.apache.spark.scheduler.TaskSchedulerInternal.scheduleAndLaunchTasks(TaskSchedulerInternal.scala:196)
+	at org.apache.spark.scheduler.TaskSchedulerInternal.scheduleAndLaunchTasks$(TaskSchedulerInternal.scala:194)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.scheduleAndLaunchTasks(TaskSchedulerImpl.scala:91)
+	at org.apache.spark.scheduler.local.LocalEndpoint.reviveOffers(LocalSchedulerBackend.scala:134)
+	at org.apache.spark.scheduler.local.LocalEndpoint$$anonfun$receive$1.applyOrElse(LocalSchedulerBackend.scala:78)
+	at org.apache.spark.rpc.netty.Inbox.$anonfun$process$1(Inbox.scala:116)
+	at org.apache.spark.rpc.netty.Inbox.safelyCall(Inbox.scala:216)
+	at org.apache.spark.rpc.netty.Inbox.process(Inbox.scala:101)
+	at org.apache.spark.rpc.netty.MessageLoop.org$apache$spark$rpc$netty$MessageLoop$$receiveLoop(MessageLoop.scala:76)
+	at org.apache.spark.rpc.netty.MessageLoop$$anon$1.run(MessageLoop.scala:42)
+	at org.apache.spark.util.threads.SparkThreadLocalCapturingRunnable.$anonfun$run$1(SparkThreadLocalForwardingThreadPoolExecutor.scala:161)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at com.databricks.sql.transaction.tahoe.mst.MultiStatementTransactionThreadHelper$.runWithMstTxnId(MultiStatementTransactionThreadHelper.scala:55)
+	at org.apache.spark.util.threads.SparkThreadLocalCapturingHelper.$anonfun$runWithCaptured$5(SparkThreadLocalForwardingThreadPoolExecutor.scala:116)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.util.threads.SparkThreadLocalCapturingHelper.$anonfun$runWithCaptured$4(SparkThreadLocalForwardingThreadPoolExecutor.scala:115)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at org.apache.spark.util.threads.SparkThreadLocalCapturingHelper.runWithCaptured(SparkThreadLocalForwardingThreadPoolExecutor.scala:114)
+	at org.apache.spark.util.threads.SparkThreadLocalCapturingHelper.runWithCaptured$(SparkThreadLocalForwardingThreadPoolExecutor.scala:91)
+	at org.apache.spark.util.threads.SparkThreadLocalCapturingRunnable.runWithCaptured(SparkThreadLocalForwardingThreadPoolExecutor.scala:158)
+	at org.apache.spark.util.threads.SparkThreadLocalCapturingRunnable.run(SparkThreadLocalForwardingThreadPoolExecutor.scala:161)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+25/08/07 05:02:12 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/08/07 05:02:12 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 37973, None)
+25/08/07 05:02:12 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-3-57-10.us-west-2.compute.internal:37973 with 434.4 MiB RAM, BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 37973, None)
+25/08/07 05:02:12 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 37973, None)
+25/08/07 05:02:12 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 37973, None)
+25/08/07 05:02:12 INFO DiskBlockManager: Shutdown hook called
+25/08/07 05:02:12 INFO ShutdownHookManager: Shutdown hook called
+25/08/07 05:02:12 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-e70653c3-a342-44a7-a88e-7b501117da4c
+25/08/07 05:02:13 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-e70653c3-a342-44a7-a88e-7b501117da4c/userFiles-c0888c85-974f-4cb6-9488-5dc1f29152da
+25/08/07 05:02:13 INFO ShutdownHookManager: Deleting directory /tmp/spark-9420100e-cc79-4cfc-bba3-174070584a2e
+25/08/07 05:02:14 ERROR FuseLogAggregator: 2025/08/07 05:02:09.443037 main.FATAL Mounting file system: Mount: mount: running /usr/bin/fusermount: exit status 1
+25/08/07 05:02:53 INFO DatabricksEdgeConfigs: serverlessEnabled : false
+25/08/07 05:02:57 INFO DatabricksEdgeConfigs: perfPackEnabled : false
+25/08/07 05:02:57 INFO DatabricksEdgeConfigs: classicSqlEnabled : false
+25/08/07 05:03:01 INFO RawConfigSingleton$: Successfully loaded DB_CONF into RawConfigSingleton.
+25/08/07 05:03:01 INFO GlobalConf$$anon$1: 
+Location Old Values:
+  - shardAlias: None
+  - realShardName: null
+  - realShardNameOpt: None
+  - shardName: null
+  - shardNameOpt: None
+  - branch: development
+  - region: us-west-2
+  - runtime: default
+  - workerNamePrefix: null
+  - deploymentMode: development
+  - shardCloud: unknown
+
+Location New Values:
+  - location: 
+    
+25/08/07 05:03:04 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:03:04 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:03:04 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:03:04 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:03:04 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:03:05 INFO SparkContext: Running Spark version 3.5.2
+25/08/07 05:03:05 INFO SparkContext: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:03:05 INFO SparkContext: Java version 17.0.13
+25/08/07 05:03:05 INFO ResourceUtils: ==============================================================
+25/08/07 05:03:05 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/08/07 05:03:05 INFO ResourceUtils: ==============================================================
+25/08/07 05:03:05 INFO SparkContext: Submitted application: pyspark-shell
+25/08/07 05:03:06 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/08/07 05:03:06 INFO ResourceProfile: Limiting resource is cpu
+25/08/07 05:03:06 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/08/07 05:03:06 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:03:06 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:03:06 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:03:06 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:03:06 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:03:06 INFO JvmCrashLogger: Past JVM crashes: detected 0, logged 0, and skipped 0 already logged
+25/08/07 05:03:07 INFO Utils: Successfully started service 'sparkDriver' on port 35255.
+25/08/07 05:03:08 INFO SparkEnv: Registering MapOutputTracker
+25/08/07 05:03:08 INFO SparkEnv: Registering BlockManagerMaster
+25/08/07 05:03:08 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/08/07 05:03:08 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/08/07 05:03:08 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/08/07 05:03:08 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-de5b26a2-fd45-49e3-915f-83ffa1974abb
+25/08/07 05:03:08 INFO SparkEnv: Registering OutputCommitCoordinator
+25/08/07 05:03:08 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+25/08/07 05:03:09 INFO ErrorEventListener: Configured monitoring unexpected Java module errors with a throttling threshold of 5 unique events per 10 minutes
+25/08/07 05:03:09 INFO JfrStreamingManager: Started JFR stream JDK17 HMR
+25/08/07 05:03:10 INFO log: Logging initialized @30337ms to org.eclipse.jetty.util.log.Slf4jLog
+25/08/07 05:03:13 INFO JettyUtils: Start Jetty 10.3.57.10:4040 for SparkUI
+25/08/07 05:03:13 INFO Server: jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.13+11-LTS
+25/08/07 05:03:14 INFO Server: Started @34317ms
+25/08/07 05:03:11 INFO DatabricksEdgeConfigs: serverlessEnabled : false
+25/08/07 05:03:14 INFO DatabricksEdgeConfigs: perfPackEnabled : false
+25/08/07 05:03:14 INFO DatabricksEdgeConfigs: classicSqlEnabled : false
+25/08/07 05:03:10 INFO DatabricksEdgeConfigs: serverlessEnabled : false
+25/08/07 05:03:14 INFO DatabricksEdgeConfigs: perfPackEnabled : false
+25/08/07 05:03:14 INFO DatabricksEdgeConfigs: classicSqlEnabled : false
+25/08/07 05:03:15 INFO AbstractConnector: Started ServerConnector@3b6b4710{HTTP/1.1, (http/1.1)}{10.3.57.10:4040}
+25/08/07 05:03:15 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+25/08/07 05:03:15 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@64f74d26{/,null,AVAILABLE,@Spark}
+25/08/07 05:03:17 INFO RawConfigSingleton$: Successfully loaded DB_CONF into RawConfigSingleton.
+25/08/07 05:03:15 INFO DatabricksEdgeConfigs: serverlessEnabled : false
+25/08/07 05:03:17 INFO DatabricksEdgeConfigs: perfPackEnabled : false
+25/08/07 05:03:17 INFO DatabricksEdgeConfigs: classicSqlEnabled : false
+25/08/07 05:03:18 INFO GlobalConf$$anon$1: 
+Location Old Values:
+  - shardAlias: None
+  - realShardName: null
+  - realShardNameOpt: None
+  - shardName: null
+  - shardNameOpt: None
+  - branch: development
+  - region: us-west-2
+  - runtime: default
+  - workerNamePrefix: null
+  - deploymentMode: development
+  - shardCloud: unknown
+
+Location New Values:
+  - location: 
+    
+25/08/07 05:03:18 INFO RawConfigSingleton$: Successfully loaded DB_CONF into RawConfigSingleton.
+25/08/07 05:03:18 INFO GlobalConf$$anon$1: 
+Location Old Values:
+  - shardAlias: None
+  - realShardName: null
+  - realShardNameOpt: None
+  - shardName: null
+  - shardNameOpt: None
+  - branch: development
+  - region: us-west-2
+  - runtime: default
+  - workerNamePrefix: null
+  - deploymentMode: development
+  - shardCloud: unknown
+
+Location New Values:
+  - location: 
+    
+25/08/07 05:03:18 ERROR SparkConnectService: Could not start Spark Connect GRPC service
+java.io.IOException: Failed to bind to address 0.0.0.0/0.0.0.0:15002
+	at grpc_shaded.io.grpc.netty.NettyServer.start(NettyServer.java:333)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:185)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:94)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.startGRPCService(SparkConnectService.scala:459)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.start(SparkConnectService.scala:468)
+	at org.apache.spark.sql.connect.SparkConnectPlugin$$anon$1.init(SparkConnectPlugin.scala:100)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.$anonfun$driverPlugins$1(PluginContainer.scala:57)
+	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:293)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:293)
+	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:290)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.<init>(PluginContainer.scala:50)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:235)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:200)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:938)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:61)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:397)
+	at py4j.Gateway.invoke(Gateway.java:257)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:199)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:119)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: grpc_shaded.io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+25/08/07 05:03:18 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.sql.connect.SparkConnectPlugin.
+25/08/07 05:03:18 INFO DLTDebugger: Registered DLTDebuggerEndpoint at endpoint dlt-debugger
+25/08/07 05:03:19 INFO LocalSparkConnectService: Adjusted permissions on /databricks/sparkconnect/grpc.sock: chown:1 chmod:0
+25/08/07 05:03:20 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:03:20 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:03:20 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:03:20 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:03:20 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:03:20 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:03:21 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:03:21 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:03:21 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:03:21 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:03:21 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:03:21 INFO Executor: Starting executor ID driver on host ip-10-3-57-10.us-west-2.compute.internal
+25/08/07 05:03:21 INFO Executor: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:03:21 INFO Executor: Java version 17.0.13
+25/08/07 05:03:21 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/08/07 05:03:21 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@6877c3f8 for default.
+25/08/07 05:03:21 INFO RawConfigSingleton$: Successfully loaded DB_CONF into RawConfigSingleton.
+25/08/07 05:03:21 INFO ExecutorPluginContainer: Initialized executor component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:03:21 INFO Utils: resolved command to be run: ArraySeq(getconf, PAGESIZE)
+25/08/07 05:03:21 INFO GlobalConf$$anon$1: 
+Location Old Values:
+  - shardAlias: None
+  - realShardName: null
+  - realShardNameOpt: None
+  - shardName: null
+  - shardNameOpt: None
+  - branch: development
+  - region: us-west-2
+  - runtime: default
+  - workerNamePrefix: null
+  - deploymentMode: development
+  - shardCloud: unknown
+
+Location New Values:
+  - location: 
+    
+25/08/07 05:03:21 INFO SparkContext: Running Spark version 3.5.2
+25/08/07 05:03:21 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:03:21 INFO SparkContext: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:03:22 INFO SparkContext: Java version 17.0.13
+25/08/07 05:03:22 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:03:22 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:03:22 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:03:22 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:03:22 INFO ResourceUtils: ==============================================================
+25/08/07 05:03:22 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/08/07 05:03:22 INFO ResourceUtils: ==============================================================
+25/08/07 05:03:22 INFO SparkContext: Submitted application: pyspark-shell
+25/08/07 05:03:22 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/08/07 05:03:22 INFO ResourceProfile: Limiting resource is cpu
+25/08/07 05:03:22 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/08/07 05:03:22 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:03:22 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:03:22 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:03:22 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:03:22 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:03:22 INFO JvmCrashLogger: Past JVM crashes: detected 0, logged 0, and skipped 0 already logged
+25/08/07 05:03:22 INFO SparkContext: Running Spark version 3.5.2
+25/08/07 05:03:22 INFO SparkContext: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:03:22 INFO SparkContext: Java version 17.0.13
+25/08/07 05:03:22 WARN NativeMemoryWatchdog: Native memory watchdog is disabled by conf.
+25/08/07 05:03:23 INFO TaskSchedulerImpl: Preemption disabled in FIFO scheduling mode.
+25/08/07 05:03:23 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45883.
+25/08/07 05:03:23 INFO ResourceUtils: ==============================================================
+25/08/07 05:03:23 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/08/07 05:03:23 INFO ResourceUtils: ==============================================================
+25/08/07 05:03:23 INFO NettyBlockTransferService: Server created on ip-10-3-57-10.us-west-2.compute.internal:45883
+25/08/07 05:03:23 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/08/07 05:03:23 INFO SparkContext: Submitted application: pyspark-shell
+25/08/07 05:03:23 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 45883, None)
+25/08/07 05:03:23 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-3-57-10.us-west-2.compute.internal:45883 with 434.4 MiB RAM, BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 45883, None)
+25/08/07 05:03:23 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 45883, None)
+25/08/07 05:03:23 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 45883, None)
+25/08/07 05:03:23 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/08/07 05:03:23 INFO ResourceProfile: Limiting resource is cpu
+25/08/07 05:03:23 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/08/07 05:03:23 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:03:23 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:03:23 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:03:23 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:03:23 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:03:23 INFO JvmCrashLogger: Past JVM crashes: detected 0, logged 0, and skipped 0 already logged
+25/08/07 05:03:24 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:03:24 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:03:24 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:03:24 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:03:24 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:03:24 INFO Utils: Successfully started service 'sparkDriver' on port 37009.
+25/08/07 05:03:25 INFO SparkContext: Running Spark version 3.5.2
+25/08/07 05:03:25 INFO SparkContext: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:03:25 INFO SparkContext: Java version 17.0.13
+25/08/07 05:03:25 INFO ResourceUtils: ==============================================================
+25/08/07 05:03:25 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/08/07 05:03:25 INFO ResourceUtils: ==============================================================
+25/08/07 05:03:25 INFO SparkContext: Submitted application: pyspark-shell
+25/08/07 05:03:25 INFO SparkEnv: Registering MapOutputTracker
+25/08/07 05:03:25 INFO SparkEnv: Registering BlockManagerMaster
+25/08/07 05:03:25 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/08/07 05:03:25 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/08/07 05:03:25 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/08/07 05:03:25 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/08/07 05:03:25 INFO ResourceProfile: Limiting resource is cpu
+25/08/07 05:03:25 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/08/07 05:03:25 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-e27d89de-c15a-4e6d-84e4-3762dd00319b
+25/08/07 05:03:25 INFO SparkEnv: Registering OutputCommitCoordinator
+25/08/07 05:03:25 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:03:25 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:03:25 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:03:25 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:03:25 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:03:25 INFO JvmCrashLogger: Past JVM crashes: detected 0, logged 0, and skipped 0 already logged
+25/08/07 05:03:25 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+25/08/07 05:03:25 INFO Utils: Successfully started service 'sparkDriver' on port 36719.
+25/08/07 05:03:25 INFO SparkEnv: Registering MapOutputTracker
+25/08/07 05:03:26 INFO SparkEnv: Registering BlockManagerMaster
+25/08/07 05:03:26 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/08/07 05:03:26 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/08/07 05:03:26 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/08/07 05:03:26 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-8d1ba2ca-18c9-4978-b56e-a29145d3bec8
+25/08/07 05:03:26 INFO log: Logging initialized @34633ms to org.eclipse.jetty.util.log.Slf4jLog
+25/08/07 05:03:26 INFO SparkEnv: Registering OutputCommitCoordinator
+25/08/07 05:03:26 INFO ErrorEventListener: Configured monitoring unexpected Java module errors with a throttling threshold of 5 unique events per 10 minutes
+25/08/07 05:03:26 INFO JfrStreamingManager: Started JFR stream JDK17 HMR
+25/08/07 05:03:26 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+25/08/07 05:03:27 INFO DiskBlockManager: Shutdown hook called
+25/08/07 05:03:27 INFO ShutdownHookManager: Shutdown hook called
+25/08/07 05:03:27 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-9ccdb48d-b06b-483a-943a-62d1afc91450
+25/08/07 05:03:27 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-9ccdb48d-b06b-483a-943a-62d1afc91450/userFiles-93e214f3-ca56-4104-8e23-ebef58693ce5
+25/08/07 05:03:27 INFO ShutdownHookManager: Deleting directory /tmp/spark-7ec3e5b5-5db5-4da0-b9bf-cd589831812e
+25/08/07 05:03:27 ERROR JfrStreamingUtils: Failed to instantiate class jdk.jfr.consumer.RecordingStream reflectively
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at com.databricks.spark.util.jfr.JfrStreamingUtils$.instantiateReflectively(JfrStreamingUtils.scala:50)
+	at com.databricks.spark.util.jfr.JfrRecordingStream.<init>(JfrRecordingStream.scala:43)
+	at com.databricks.spark.util.jfr.JfrStreamingManager.startStream(JfrStreamingManager.scala:75)
+	at com.databricks.spark.util.jfr.JfrStreamingManager.$anonfun$start$1(JfrStreamingManager.scala:57)
+	at java.base/java.util.concurrent.ConcurrentHashMap.forEach(ConcurrentHashMap.java:1603)
+	at com.databricks.spark.util.jfr.JfrStreamingManager.start(JfrStreamingManager.scala:57)
+	at org.apache.spark.SparkEnv.$anonfun$new$3(SparkEnv.scala:117)
+	at org.apache.spark.SparkEnv.$anonfun$new$3$adapted(SparkEnv.scala:117)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.SparkEnv.$anonfun$new$2(SparkEnv.scala:117)
+	at org.apache.spark.util.threads.SparkThreadLocalClearingRunnable.run(SparkThreadLocalClearingScheduledThreadPoolExecutor.scala:74)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.base/java.lang.Runtime.addShutdownHook(Runtime.java:216)
+	at jdk.jfr/jdk.jfr.internal.SecuritySupport.lambda$registerShutdownHook$9(SecuritySupport.java:353)
+	at jdk.jfr/jdk.jfr.internal.SecuritySupport$2.run(SecuritySupport.java:241)
+	at jdk.jfr/jdk.jfr.internal.SecuritySupport$2.run(SecuritySupport.java:238)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:460)
+	at jdk.jfr/jdk.jfr.internal.SecuritySupport.doPrivileged(SecuritySupport.java:238)
+	at jdk.jfr/jdk.jfr.internal.SecuritySupport.registerShutdownHook(SecuritySupport.java:353)
+	at jdk.jfr/jdk.jfr.internal.PlatformRecorder.<init>(PlatformRecorder.java:95)
+	at jdk.jfr/jdk.jfr.FlightRecorder.getFlightRecorder(FlightRecorder.java:180)
+	at jdk.jfr/jdk.jfr.Recording.<init>(Recording.java:114)
+	at jdk.jfr/jdk.jfr.Recording.<init>(Recording.java:138)
+	at jdk.jfr/jdk.jfr.consumer.RecordingStream.<init>(RecordingStream.java:110)
+	... 22 more
+25/08/07 05:03:28 INFO Utils: Successfully started service 'sparkDriver' on port 46535.
+25/08/07 05:03:28 INFO SparkEnv: Registering MapOutputTracker
+25/08/07 05:03:29 INFO SparkEnv: Registering BlockManagerMaster
+25/08/07 05:03:29 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/08/07 05:03:29 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/08/07 05:03:29 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/08/07 05:03:29 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-85b2200c-d689-4f21-a877-8ed69c53c417
+25/08/07 05:03:29 INFO SparkEnv: Registering OutputCommitCoordinator
+25/08/07 05:03:29 INFO JettyUtils: Start Jetty 10.3.57.10:4040 for SparkUI
+25/08/07 05:03:29 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+25/08/07 05:03:30 INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@64f74d26{/,null,STOPPED,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@35559985{/jobs,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@337c0bb1{/jobs/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1f473924{/jobs/job,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@70da1ac{/jobs/job/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4164190b{/stages,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@22a4cbcf{/stages/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@72ad1ea7{/stages/stage,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4963937{/stages/stage/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@72703ee1{/stages/pool,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@93287ab{/stages/pool/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@658d23{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@63a500e5{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@357a8188{/storage,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3e9e3964{/storage/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@16c226b2{/storage/rdd,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@118fe957{/storage/rdd/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4d0989ab{/environment,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@50330f49{/environment/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5584bd9c{/executors,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6783aca2{/executors/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4a94126e{/executors/threadDump,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@a8ab03b{/executors/threadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3b3705f3{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@239395a5{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@22064614{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5e48c892{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO Server: jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.13+11-LTS
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@106a95b{/static,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@583847ae{/,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@65661bfe{/api,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@69813769{/metrics,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@10cbb192{/jobs/job/kill,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@74afd1f{/stages/stage/kill,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4771103a{/metrics/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:30 INFO Server: Started @39042ms
+25/08/07 05:03:30 INFO ErrorEventListener: Configured monitoring unexpected Java module errors with a throttling threshold of 5 unique events per 10 minutes
+25/08/07 05:03:30 INFO JfrStreamingManager: Started JFR stream JDK17 HMR
+25/08/07 05:03:31 INFO log: Logging initialized @34164ms to org.eclipse.jetty.util.log.Slf4jLog
+25/08/07 05:03:31 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+25/08/07 05:03:31 INFO AbstractConnector: Started ServerConnector@db6a72a{HTTP/1.1, (http/1.1)}{10.3.57.10:4041}
+25/08/07 05:03:31 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+25/08/07 05:03:32 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@50295e42{/,null,AVAILABLE,@Spark}
+25/08/07 05:03:34 INFO JettyUtils: Start Jetty 10.3.57.10:4040 for SparkUI
+25/08/07 05:03:34 INFO Server: jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.13+11-LTS
+25/08/07 05:03:35 INFO Server: Started @38150ms
+25/08/07 05:03:36 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+25/08/07 05:03:36 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+25/08/07 05:03:36 ERROR SparkConnectService: Could not start Spark Connect GRPC service
+java.io.IOException: Failed to bind to address 0.0.0.0/0.0.0.0:15002
+	at grpc_shaded.io.grpc.netty.NettyServer.start(NettyServer.java:333)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:185)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:94)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.startGRPCService(SparkConnectService.scala:459)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.start(SparkConnectService.scala:468)
+	at org.apache.spark.sql.connect.SparkConnectPlugin$$anon$1.init(SparkConnectPlugin.scala:100)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.$anonfun$driverPlugins$1(PluginContainer.scala:57)
+	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:293)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:293)
+	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:290)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.<init>(PluginContainer.scala:50)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:235)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:200)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:938)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:61)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:397)
+	at py4j.Gateway.invoke(Gateway.java:257)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:199)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:119)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: grpc_shaded.io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+25/08/07 05:03:36 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.sql.connect.SparkConnectPlugin.
+25/08/07 05:03:36 INFO AbstractConnector: Started ServerConnector@15d9c920{HTTP/1.1, (http/1.1)}{10.3.57.10:4042}
+25/08/07 05:03:36 INFO Utils: Successfully started service 'SparkUI' on port 4042.
+25/08/07 05:03:36 INFO DLTDebugger: Registered DLTDebuggerEndpoint at endpoint dlt-debugger
+25/08/07 05:03:36 INFO LocalSparkConnectService: Adjusted permissions on /databricks/sparkconnect/grpc.sock: chown:1 chmod:0
+25/08/07 05:03:36 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7b161183{/,null,AVAILABLE,@Spark}
+25/08/07 05:03:37 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:03:37 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:03:37 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:03:37 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:03:37 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:03:37 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:03:38 INFO Executor: Starting executor ID driver on host ip-10-3-57-10.us-west-2.compute.internal
+25/08/07 05:03:38 INFO Executor: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:03:38 INFO Executor: Java version 17.0.13
+25/08/07 05:03:38 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/08/07 05:03:38 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@377e98d2 for default.
+25/08/07 05:03:39 INFO ExecutorPluginContainer: Initialized executor component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:03:39 INFO Utils: resolved command to be run: ArraySeq(getconf, PAGESIZE)
+25/08/07 05:03:39 ERROR SparkConnectService: Could not start Spark Connect GRPC service
+java.io.IOException: Failed to bind to address 0.0.0.0/0.0.0.0:15002
+	at grpc_shaded.io.grpc.netty.NettyServer.start(NettyServer.java:333)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:185)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:94)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.startGRPCService(SparkConnectService.scala:459)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.start(SparkConnectService.scala:468)
+	at org.apache.spark.sql.connect.SparkConnectPlugin$$anon$1.init(SparkConnectPlugin.scala:100)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.$anonfun$driverPlugins$1(PluginContainer.scala:57)
+	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:293)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:293)
+	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:290)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.<init>(PluginContainer.scala:50)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:235)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:200)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:938)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:61)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:397)
+	at py4j.Gateway.invoke(Gateway.java:257)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:199)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:119)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: grpc_shaded.io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+25/08/07 05:03:40 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.sql.connect.SparkConnectPlugin.
+25/08/07 05:03:40 INFO DLTDebugger: Registered DLTDebuggerEndpoint at endpoint dlt-debugger
+25/08/07 05:03:40 INFO LocalSparkConnectService: Adjusted permissions on /databricks/sparkconnect/grpc.sock: chown:1 chmod:0
+25/08/07 05:03:40 WARN NativeMemoryWatchdog: Native memory watchdog is disabled by conf.
+25/08/07 05:03:40 INFO TaskSchedulerImpl: Preemption disabled in FIFO scheduling mode.
+25/08/07 05:03:40 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46403.
+25/08/07 05:03:40 INFO NettyBlockTransferService: Server created on ip-10-3-57-10.us-west-2.compute.internal:46403
+25/08/07 05:03:40 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/08/07 05:03:40 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 46403, None)
+25/08/07 05:03:41 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-3-57-10.us-west-2.compute.internal:46403 with 434.4 MiB RAM, BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 46403, None)
+25/08/07 05:03:41 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 46403, None)
+25/08/07 05:03:41 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 46403, None)
+25/08/07 05:03:41 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:03:41 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:03:41 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:03:41 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:03:41 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:03:41 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:03:41 INFO Executor: Starting executor ID driver on host ip-10-3-57-10.us-west-2.compute.internal
+25/08/07 05:03:41 INFO Executor: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:03:41 INFO Executor: Java version 17.0.13
+25/08/07 05:03:42 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/08/07 05:03:42 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@32f24be2 for default.
+25/08/07 05:03:42 INFO ExecutorPluginContainer: Initialized executor component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:03:42 INFO Utils: resolved command to be run: ArraySeq(getconf, PAGESIZE)
+25/08/07 05:03:43 WARN NativeMemoryWatchdog: Native memory watchdog is disabled by conf.
+25/08/07 05:03:43 INFO TaskSchedulerImpl: Preemption disabled in FIFO scheduling mode.
+25/08/07 05:03:43 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 36469.
+25/08/07 05:03:43 INFO NettyBlockTransferService: Server created on ip-10-3-57-10.us-west-2.compute.internal:36469
+25/08/07 05:03:43 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/08/07 05:03:43 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 36469, None)
+25/08/07 05:03:43 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-3-57-10.us-west-2.compute.internal:36469 with 434.4 MiB RAM, BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 36469, None)
+25/08/07 05:03:43 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 36469, None)
+25/08/07 05:03:43 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 36469, None)
+25/08/07 05:03:46 INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@50295e42{/,null,STOPPED,@Spark}
+25/08/07 05:03:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3b0887c6{/jobs,null,AVAILABLE,@Spark}
+25/08/07 05:03:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6b4c9b60{/jobs/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3fea897d{/jobs/job,null,AVAILABLE,@Spark}
+25/08/07 05:03:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@cef16d6{/jobs/job/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@43ef6f18{/stages,null,AVAILABLE,@Spark}
+25/08/07 05:03:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5ebe44b6{/stages/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@39f654d6{/stages/stage,null,AVAILABLE,@Spark}
+25/08/07 05:03:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2e78131c{/stages/stage/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5f5d20d9{/stages/pool,null,AVAILABLE,@Spark}
+25/08/07 05:03:46 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@614f6a8{/stages/pool/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@506c7aa6{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4e8b6a58{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@15c24286{/storage,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3434711c{/storage/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@50639116{/storage/rdd,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2667e061{/storage/rdd/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2ccc679c{/environment,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@62f4904b{/environment/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@109097dc{/executors,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6507b083{/executors/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@51eb607b{/executors/threadDump,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@124f8663{/executors/threadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@54bb7429{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5572cbc1{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4d50f8a4{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@34172c0d{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@12d68005{/static,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@c03fb4b{/,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1dc89462{/api,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@120dc93a{/metrics,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@518d174b{/jobs/job/kill,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@55dfff21{/stages/stage/kill,null,AVAILABLE,@Spark}
+25/08/07 05:03:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6ea66980{/metrics/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@7b161183{/,null,STOPPED,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6b4c9b60{/jobs,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@bf9fcd9{/jobs/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@cef16d6{/jobs/job,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@43ef6f18{/jobs/job/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5ebe44b6{/stages,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@63e12315{/stages/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2e78131c{/stages/stage,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5f5d20d9{/stages/stage/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@614f6a8{/stages/pool,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@506c7aa6{/stages/pool/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4e8b6a58{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@15c24286{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3434711c{/storage,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@50639116{/storage/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2667e061{/storage/rdd,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2ccc679c{/storage/rdd/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@62f4904b{/environment,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@109097dc{/environment/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6507b083{/executors,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@51eb607b{/executors/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@124f8663{/executors/threadDump,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@54bb7429{/executors/threadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5572cbc1{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4d50f8a4{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@34172c0d{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@12d68005{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2e0aff45{/static,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1dc89462{/,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@373bd531{/api,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5e5a0dfb{/metrics,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@55dfff21{/jobs/job/kill,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@626a66cc{/stages/stage/kill,null,AVAILABLE,@Spark}
+25/08/07 05:03:48 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@42a48e0d{/metrics/json,null,AVAILABLE,@Spark}
+25/08/07 05:03:51 ERROR FuseLogAggregator: 2025/08/07 05:03:51.540442 main.FATAL Mounting file system: Mount: mount: running /usr/bin/fusermount: exit status 1
+25/08/07 05:03:53 ERROR FuseLogAggregator: 2025/08/07 05:03:51.540442 main.FATAL Mounting file system: Mount: mount: running /usr/bin/fusermount: exit status 1
+25/08/07 05:03:56 ERROR FuseLogAggregator: 2025/08/07 05:03:51.540442 main.FATAL Mounting file system: Mount: mount: running /usr/bin/fusermount: exit status 1
+25/08/07 05:04:10 INFO SparkContext: Invoking stop() from shutdown hook
+25/08/07 05:04:10 INFO SparkContext: SparkContext is stopping with exitCode 0 from run at Executors.java:539.
+25/08/07 05:04:11 INFO HmrNonQueryEventLogger: NQL logging rate limit was initialized to : 1 log lines per call site per second, bypass allow list: AppStatusListener.scala
+25/08/07 05:04:12 INFO DpHmrNonQueryEvent: CowLMokLCggIgcn1igYQAQoICMvfrJoBEAEKDQjUob6k//////8BEAEKDQin1d7l+/////8BEAAKDQiTyp6e+/////8BEAEKCAiy3/3JARAACg0I2OvEuf3/////ARAACg0Il+nb8f7/////ARAACg0Ip6e32fr/////ARABCggInLfyigcQAAoICNywitMBEAAKCAiU1JypBxAACg0I/YvgnPr/////ARAACggI1ZbDqQUQAQoICO23v8oEEAAKDQjpmaOO//////8BEAAKCAiAz8PZBBABCggIq4ytwAYQAAoHCK6j1XIQAAoNCOTehID+/////wEQAAoNCIzK1IH5/////wEQAQoNCN74yp7+/////wEQAQoNCNOjy73//////wEQAAoNCNqR3d3+/////wEQAQoICL2f9fsEEAEKCAjB2MH9ARAACg0I/JWlzfz/////ARAACggIibeN9gIQAAoNCPOgodL4/////wEQAQoICL6Jls0FEAAKDQjY0uqG+f////8BEAAKCAix7fuKBRABCggIqN2l7AQQAQoNCMCW/Zr4/////wEQAAoNCN7fycD4/////wEQAAoICNWL5ZoDEAAKDQi146DQ+f////8BEAAKDQi6ke3S/v////8BEAEKCAjbhaniAhABCggIpIykzwcQAAoICMDn74ACEAAKDQib8bj5+f////8BEAAKDQjx8aqJ//////8BEAAKDQj59qfQ/v////8BEAEKDQjMsI/a+v////8BEAEKBwiX6LdLEAEKDQj79Zme/v////8BEAEKDQil09Du+P////8BEAEKDQiN9LzY/v////8BEAAKCAiS1rmCAhAACggIgM3N7gYQAQoICNiL89sFEAAKCAj0h/v7ARABCg0Iy46XuP//////ARAACggItJzd8QEQAQoNCP32su79/////wEQAAoICO6yjakDEAEKDQjMt5vA/f////8BEAEKCAjigOi0BRAACg0Iz/Tctfr/////ARAACggIucqI6gEQAAoGCMrafRABCggIlcO6mAQQAQoICJux5aIGEAEKDQi4mpS5/P////8BEAAKDQjam4OG/P////8BEAAKBwi/yrEwEAAKDQj/ybrf/v////8BEAEKDQjOhcOM/P////8BEAEKCAi357eqBxAACggIv+78lwMQAQoICIzukecFEAEKDQjfzMyK+/////8BEAEKCAib4oiyAxAACggIhfic5QMQAAoNCPHUnef5/////wEQAAoNCPOomKD//////wEQAAoNCLHC5tD5/////wEQAAoNCMDW9P7//////wEQAQoNCK7dnZv//////wEQAAoICJWNkYsEEAAKCAiAkKuABxAACggIw/T/vQYQAQoICMrbvrYGEAAKDQiZs6vm/f////8BEAAKDQj6+ZXG+P////8BEAAKDQj6/Lba+f////8BEAAKCAj3j9qpBRABCg0I8fq4sPz/////ARAACggIqpjYuQUQAAoHCIPF91wQAAoICOC2uNABEAEKDQiX9c6u+P////8BEAEKCAi935aUBhAACggIirDWxQUQAQoNCObU18H9/////wEQAQoNCOCl+7T8/////wEQAQoICMjpuO0GEAEKDQjXnNjD//////8BEAEKCAjj77f6AxABCg0IyPiMjvn/////ARAACggIsb6N6wEQAQoHCL2O3SAQAQoNCP+16ur6/////wEQAAoNCLKBotv9/////wEQAQoICICjl/4HEAAKBwj48fE6EAEKCAjapZKXBxAACg0I2f7uyf//////ARABCg0ItsL8sv//////ARABCggIiqLNvQcQAAoICIuxxcICEAEKCAimptb1ARAACg0I99S84///////ARAACggI2pvRjgQQABIMCMvn0MQGENby2eYCIgtkZXZlbG9wbWVudCoAWPWDz/4LcAB6ELTAcAUhyUPPpfVsBJg9duGqAQDCAQd1bmtub3duygECCgCo0fnWAwE=
+25/08/07 05:04:12 WARN SparkContext: Requesting executors is not supported by current scheduler.
+25/08/07 05:04:12 INFO AbstractConnector: Stopped Spark@3b6b4710{HTTP/1.1, (http/1.1)}{10.3.57.10:4040}
+25/08/07 05:04:12 INFO SparkUI: Stopped Spark web UI at http://10.3.57.10:4040
+25/08/07 05:04:12 INFO DeadlockDetector: Trigger deadlock detection immediately.
+25/08/07 05:04:14 INFO JfrStreamingManager: Closed JFR stream JDK17 HMR
+25/08/07 05:04:14 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+25/08/07 05:04:14 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+25/08/07 05:04:14 INFO MemoryStore: MemoryStore cleared
+25/08/07 05:04:14 INFO BlockManager: BlockManager stopped
+25/08/07 05:04:14 INFO BlockManagerMaster: BlockManagerMaster stopped
+25/08/07 05:04:14 INFO MetricsSystem: Stopping driver MetricsSystem
+25/08/07 05:04:14 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+25/08/07 05:04:14 INFO HangingDetectorManager: Stopping all hanging detection tasks.
+25/08/07 05:04:14 INFO SparkContext: Successfully stopped SparkContext (Uptime: 69198 ms)
+25/08/07 05:04:14 INFO ShutdownHookManager: Shutdown hook called
+25/08/07 05:04:14 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-55c0e006-177d-4556-85a4-9483e36a9760
+25/08/07 05:04:15 INFO ShutdownHookManager: Deleting directory /tmp/spark-f0ab4042-3fed-46a7-874a-a4b25fdb51e1
+25/08/07 05:04:15 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-55c0e006-177d-4556-85a4-9483e36a9760/pyspark-373a0d05-3a13-4bd9-8ebe-f2e334a74db8
+25/08/07 05:04:17 INFO SparkContext: Invoking stop() from shutdown hook
+25/08/07 05:04:17 INFO SparkContext: SparkContext is stopping with exitCode 0 from run at Executors.java:539.
+25/08/07 05:04:18 ERROR Utils: Process WrappedArray(/bin/sh, -c, df /local_disk0) exited with code 143: 
+25/08/07 05:04:18 ERROR NodeStatusMonitor: Failed to get disk info
+org.apache.spark.SparkException: Process WrappedArray(/bin/sh, -c, df /local_disk0) exited with code 143. 
+	at org.apache.spark.util.Utils$.executeAndGetOutputInternal(Utils.scala:1508)
+	at org.apache.spark.debugger.NodeStatusMonitor.getDiskInfo(NodeStatusMonitor.scala:94)
+	at org.apache.spark.debugger.NodeStatusMonitor.monitorDisk(NodeStatusMonitor.scala:162)
+	at org.apache.spark.debugger.NodeStatusMonitor.monitor(NodeStatusMonitor.scala:272)
+	at org.apache.spark.debugger.NodeStatusMonitor$$anon$1.run(NodeStatusMonitor.scala:298)
+	at org.apache.spark.util.threads.SparkThreadLocalClearingRunnable.run(SparkThreadLocalClearingScheduledThreadPoolExecutor.scala:74)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+25/08/07 05:04:18 ERROR Utils: Process WrappedArray(/bin/sh, -c, cat /proc/meminfo) exited with code 143: 
+25/08/07 05:04:18 ERROR NodeStatusMonitor: Failed to get memory info
+org.apache.spark.SparkException: Process WrappedArray(/bin/sh, -c, cat /proc/meminfo) exited with code 143. 
+	at org.apache.spark.util.Utils$.executeAndGetOutputInternal(Utils.scala:1508)
+	at org.apache.spark.debugger.NodeStatusMonitor.getMemInfo(NodeStatusMonitor.scala:125)
+	at org.apache.spark.debugger.NodeStatusMonitor.monitorMemory(NodeStatusMonitor.scala:193)
+	at org.apache.spark.debugger.NodeStatusMonitor.monitor(NodeStatusMonitor.scala:276)
+	at org.apache.spark.debugger.NodeStatusMonitor$$anon$1.run(NodeStatusMonitor.scala:298)
+	at org.apache.spark.util.threads.SparkThreadLocalClearingRunnable.run(SparkThreadLocalClearingScheduledThreadPoolExecutor.scala:74)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+25/08/07 05:04:18 INFO HmrNonQueryEventLogger: NQL logging rate limit was initialized to : 1 log lines per call site per second, bypass allow list: AppStatusListener.scala
+25/08/07 05:04:19 INFO DpHmrNonQueryEvent: CowLMokLCggIgcn1igYQAQoICMvfrJoBEAEKDQjUob6k//////8BEAEKDQin1d7l+/////8BEAAKDQiTyp6e+/////8BEAEKCAiy3/3JARAACg0I2OvEuf3/////ARAACg0Il+nb8f7/////ARAACg0Ip6e32fr/////ARABCggInLfyigcQAAoICNywitMBEAAKCAiU1JypBxAACg0I/YvgnPr/////ARAACggI1ZbDqQUQAQoICO23v8oEEAAKDQjpmaOO//////8BEAAKCAiAz8PZBBABCggIq4ytwAYQAAoHCK6j1XIQAAoNCOTehID+/////wEQAAoNCIzK1IH5/////wEQAQoNCN74yp7+/////wEQAQoNCNOjy73//////wEQAAoNCNqR3d3+/////wEQAQoICL2f9fsEEAEKCAjB2MH9ARAACg0I/JWlzfz/////ARAACggIibeN9gIQAAoNCPOgodL4/////wEQAQoICL6Jls0FEAAKDQjY0uqG+f////8BEAAKCAix7fuKBRABCggIqN2l7AQQAQoNCMCW/Zr4/////wEQAAoNCN7fycD4/////wEQAAoICNWL5ZoDEAAKDQi146DQ+f////8BEAAKDQi6ke3S/v////8BEAEKCAjbhaniAhABCggIpIykzwcQAAoICMDn74ACEAAKDQib8bj5+f////8BEAAKDQjx8aqJ//////8BEAAKDQj59qfQ/v////8BEAEKDQjMsI/a+v////8BEAEKBwiX6LdLEAEKDQj79Zme/v////8BEAEKDQil09Du+P////8BEAEKDQiN9LzY/v////8BEAAKCAiS1rmCAhAACggIgM3N7gYQAQoICNiL89sFEAAKCAj0h/v7ARABCg0Iy46XuP//////ARAACggItJzd8QEQAQoNCP32su79/////wEQAAoICO6yjakDEAEKDQjMt5vA/f////8BEAEKCAjigOi0BRAACg0Iz/Tctfr/////ARAACggIucqI6gEQAAoGCMrafRABCggIlcO6mAQQAQoICJux5aIGEAEKDQi4mpS5/P////8BEAAKDQjam4OG/P////8BEAAKBwi/yrEwEAAKDQj/ybrf/v////8BEAEKDQjOhcOM/P////8BEAEKCAi357eqBxAACggIv+78lwMQAQoICIzukecFEAEKDQjfzMyK+/////8BEAEKCAib4oiyAxAACggIhfic5QMQAAoNCPHUnef5/////wEQAAoNCPOomKD//////wEQAAoNCLHC5tD5/////wEQAAoNCMDW9P7//////wEQAQoNCK7dnZv//////wEQAAoICJWNkYsEEAAKCAiAkKuABxAACggIw/T/vQYQAQoICMrbvrYGEAAKDQiZs6vm/f////8BEAAKDQj6+ZXG+P////8BEAAKDQj6/Lba+f////8BEAAKCAj3j9qpBRABCg0I8fq4sPz/////ARAACggIqpjYuQUQAAoHCIPF91wQAAoICOC2uNABEAEKDQiX9c6u+P////8BEAEKCAi935aUBhAACggIirDWxQUQAQoNCObU18H9/////wEQAQoNCOCl+7T8/////wEQAQoICMjpuO0GEAEKDQjXnNjD//////8BEAEKCAjj77f6AxABCg0IyPiMjvn/////ARAACggIsb6N6wEQAQoHCL2O3SAQAQoNCP+16ur6/////wEQAAoNCLKBotv9/////wEQAQoICICjl/4HEAAKBwj48fE6EAEKCAjapZKXBxAACg0I2f7uyf//////ARABCg0ItsL8sv//////ARABCggIiqLNvQcQAAoICIuxxcICEAEKCAimptb1ARAACg0I99S84///////ARAACggI2pvRjgQQABILCNPn0MQGEJ+BhSAiC2RldmVsb3BtZW50KgBY9YPP/gtwAHoQihTyVEK5RY+vhCQoCtm7jaoBAMIBB3Vua25vd27KAQIKAKjR+dYDAQ==
+25/08/07 05:04:19 WARN SparkContext: Requesting executors is not supported by current scheduler.
+25/08/07 05:04:19 INFO AbstractConnector: Stopped Spark@db6a72a{HTTP/1.1, (http/1.1)}{10.3.57.10:4041}
+25/08/07 05:04:19 INFO SparkUI: Stopped Spark web UI at http://10.3.57.10:4041
+25/08/07 05:04:19 INFO DeadlockDetector: Trigger deadlock detection immediately.
+25/08/07 05:04:19 ERROR Utils: Process WrappedArray(/bin/sh, -c, df /local_disk0) exited with code 143: 
+25/08/07 05:04:19 ERROR NodeStatusMonitor: Failed to get disk info
+org.apache.spark.SparkException: Process WrappedArray(/bin/sh, -c, df /local_disk0) exited with code 143. 
+	at org.apache.spark.util.Utils$.executeAndGetOutputInternal(Utils.scala:1508)
+	at org.apache.spark.debugger.NodeStatusMonitor.getDiskInfo(NodeStatusMonitor.scala:94)
+	at org.apache.spark.debugger.NodeStatusMonitor.monitorDisk(NodeStatusMonitor.scala:162)
+	at org.apache.spark.debugger.NodeStatusMonitor.monitor(NodeStatusMonitor.scala:272)
+	at org.apache.spark.debugger.NodeStatusMonitor$$anon$1.run(NodeStatusMonitor.scala:298)
+	at org.apache.spark.util.threads.SparkThreadLocalClearingRunnable.run(SparkThreadLocalClearingScheduledThreadPoolExecutor.scala:74)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+25/08/07 05:05:56 INFO DatabricksEdgeConfigs: serverlessEnabled : false
+25/08/07 05:06:00 INFO DatabricksEdgeConfigs: perfPackEnabled : false
+25/08/07 05:06:00 INFO DatabricksEdgeConfigs: classicSqlEnabled : false
+25/08/07 05:06:04 INFO RawConfigSingleton$: Successfully loaded DB_CONF into RawConfigSingleton.
+25/08/07 05:06:04 INFO GlobalConf$$anon$1: 
+Location Old Values:
+  - shardAlias: None
+  - realShardName: null
+  - realShardNameOpt: None
+  - shardName: null
+  - shardNameOpt: None
+  - branch: development
+  - region: us-west-2
+  - runtime: default
+  - workerNamePrefix: null
+  - deploymentMode: development
+  - shardCloud: unknown
+
+Location New Values:
+  - location: 
+    
+25/08/07 05:06:07 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:07 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:07 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:07 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:07 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:07 INFO SparkContext: Running Spark version 3.5.2
+25/08/07 05:06:07 INFO SparkContext: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:06:07 INFO SparkContext: Java version 17.0.13
+25/08/07 05:06:08 INFO ResourceUtils: ==============================================================
+25/08/07 05:06:08 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/08/07 05:06:08 INFO ResourceUtils: ==============================================================
+25/08/07 05:06:08 INFO SparkContext: Submitted application: pyspark-shell
+25/08/07 05:06:08 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/08/07 05:06:08 INFO ResourceProfile: Limiting resource is cpu
+25/08/07 05:06:08 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/08/07 05:06:08 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:08 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:08 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:08 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:08 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:08 INFO JvmCrashLogger: Past JVM crashes: detected 0, logged 0, and skipped 0 already logged
+25/08/07 05:06:10 INFO Utils: Successfully started service 'sparkDriver' on port 40409.
+25/08/07 05:06:10 INFO SparkEnv: Registering MapOutputTracker
+25/08/07 05:06:10 INFO SparkEnv: Registering BlockManagerMaster
+25/08/07 05:06:10 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/08/07 05:06:10 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/08/07 05:06:10 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/08/07 05:06:10 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-538f191f-1803-4736-8fb2-3e98b69ff593
+25/08/07 05:06:10 INFO SparkEnv: Registering OutputCommitCoordinator
+25/08/07 05:06:11 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+25/08/07 05:06:11 INFO log: Logging initialized @28246ms to org.eclipse.jetty.util.log.Slf4jLog
+25/08/07 05:06:12 INFO ErrorEventListener: Configured monitoring unexpected Java module errors with a throttling threshold of 5 unique events per 10 minutes
+25/08/07 05:06:12 INFO JfrStreamingManager: Started JFR stream JDK17 HMR
+25/08/07 05:06:09 INFO DatabricksEdgeConfigs: serverlessEnabled : false
+25/08/07 05:06:12 INFO DatabricksEdgeConfigs: perfPackEnabled : false
+25/08/07 05:06:12 INFO DatabricksEdgeConfigs: classicSqlEnabled : false
+25/08/07 05:06:10 INFO DatabricksEdgeConfigs: serverlessEnabled : false
+25/08/07 05:06:13 INFO DatabricksEdgeConfigs: perfPackEnabled : false
+25/08/07 05:06:13 INFO DatabricksEdgeConfigs: classicSqlEnabled : false
+25/08/07 05:06:14 INFO JettyUtils: Start Jetty 10.3.57.10:4040 for SparkUI
+25/08/07 05:06:14 INFO Server: jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.13+11-LTS
+25/08/07 05:06:15 INFO RawConfigSingleton$: Successfully loaded DB_CONF into RawConfigSingleton.
+25/08/07 05:06:15 INFO Server: Started @31854ms
+25/08/07 05:06:15 INFO GlobalConf$$anon$1: 
+Location Old Values:
+  - shardAlias: None
+  - realShardName: null
+  - realShardNameOpt: None
+  - shardName: null
+  - shardNameOpt: None
+  - branch: development
+  - region: us-west-2
+  - runtime: default
+  - workerNamePrefix: null
+  - deploymentMode: development
+  - shardCloud: unknown
+
+Location New Values:
+  - location: 
+    
+25/08/07 05:06:16 INFO AbstractConnector: Started ServerConnector@34f21017{HTTP/1.1, (http/1.1)}{10.3.57.10:4040}
+25/08/07 05:06:16 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+25/08/07 05:06:16 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@40abb739{/,null,AVAILABLE,@Spark}
+25/08/07 05:06:16 INFO RawConfigSingleton$: Successfully loaded DB_CONF into RawConfigSingleton.
+25/08/07 05:06:17 INFO GlobalConf$$anon$1: 
+Location Old Values:
+  - shardAlias: None
+  - realShardName: null
+  - realShardNameOpt: None
+  - shardName: null
+  - shardNameOpt: None
+  - branch: development
+  - region: us-west-2
+  - runtime: default
+  - workerNamePrefix: null
+  - deploymentMode: development
+  - shardCloud: unknown
+
+Location New Values:
+  - location: 
+    
+25/08/07 05:06:18 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:18 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:18 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:18 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:18 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:19 INFO SparkContext: Running Spark version 3.5.2
+25/08/07 05:06:19 INFO SparkContext: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:06:19 INFO SparkContext: Java version 17.0.13
+25/08/07 05:06:19 INFO ResourceUtils: ==============================================================
+25/08/07 05:06:19 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/08/07 05:06:19 INFO ResourceUtils: ==============================================================
+25/08/07 05:06:19 INFO SparkContext: Submitted application: pyspark-shell
+25/08/07 05:06:19 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:19 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:19 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:19 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:19 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/08/07 05:06:19 INFO ResourceProfile: Limiting resource is cpu
+25/08/07 05:06:19 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/08/07 05:06:19 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:19 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:19 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:19 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:19 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:19 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:19 INFO JvmCrashLogger: Past JVM crashes: detected 0, logged 0, and skipped 0 already logged
+25/08/07 05:06:20 INFO SparkContext: Running Spark version 3.5.2
+25/08/07 05:06:20 INFO SparkContext: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:06:20 INFO SparkContext: Java version 17.0.13
+25/08/07 05:06:20 INFO ResourceUtils: ==============================================================
+25/08/07 05:06:20 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/08/07 05:06:20 INFO ResourceUtils: ==============================================================
+25/08/07 05:06:20 INFO SparkContext: Submitted application: pyspark-shell
+25/08/07 05:06:20 ERROR SparkConnectService: Could not start Spark Connect GRPC service
+java.io.IOException: Failed to bind to address 0.0.0.0/0.0.0.0:15002
+	at grpc_shaded.io.grpc.netty.NettyServer.start(NettyServer.java:333)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:185)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:94)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.startGRPCService(SparkConnectService.scala:459)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.start(SparkConnectService.scala:468)
+	at org.apache.spark.sql.connect.SparkConnectPlugin$$anon$1.init(SparkConnectPlugin.scala:100)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.$anonfun$driverPlugins$1(PluginContainer.scala:57)
+	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:293)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:293)
+	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:290)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.<init>(PluginContainer.scala:50)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:235)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:200)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:938)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:61)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:397)
+	at py4j.Gateway.invoke(Gateway.java:257)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:199)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:119)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: grpc_shaded.io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+25/08/07 05:06:20 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.sql.connect.SparkConnectPlugin.
+25/08/07 05:06:20 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/08/07 05:06:20 INFO ResourceProfile: Limiting resource is cpu
+25/08/07 05:06:20 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/08/07 05:06:20 INFO DLTDebugger: Registered DLTDebuggerEndpoint at endpoint dlt-debugger
+25/08/07 05:06:20 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:20 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:20 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:20 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:20 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:21 INFO JvmCrashLogger: Past JVM crashes: detected 0, logged 0, and skipped 0 already logged
+25/08/07 05:06:18 INFO DatabricksEdgeConfigs: serverlessEnabled : false
+25/08/07 05:06:21 INFO DatabricksEdgeConfigs: perfPackEnabled : false
+25/08/07 05:06:21 INFO DatabricksEdgeConfigs: classicSqlEnabled : false
+25/08/07 05:06:21 INFO Utils: Successfully started service 'sparkDriver' on port 44523.
+25/08/07 05:06:21 INFO SparkEnv: Registering MapOutputTracker
+25/08/07 05:06:21 INFO LocalSparkConnectService: Adjusted permissions on /databricks/sparkconnect/grpc.sock: chown:1 chmod:0
+25/08/07 05:06:21 INFO SparkEnv: Registering BlockManagerMaster
+25/08/07 05:06:21 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/08/07 05:06:21 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/08/07 05:06:21 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/08/07 05:06:21 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-02698e1f-de26-4ff5-8bd4-f63c7977c435
+25/08/07 05:06:22 INFO SparkEnv: Registering OutputCommitCoordinator
+25/08/07 05:06:22 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+25/08/07 05:06:22 INFO Utils: Successfully started service 'sparkDriver' on port 36953.
+25/08/07 05:06:23 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:06:23 INFO ErrorEventListener: Configured monitoring unexpected Java module errors with a throttling threshold of 5 unique events per 10 minutes
+25/08/07 05:06:23 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:23 INFO JfrStreamingManager: Started JFR stream JDK17 HMR
+25/08/07 05:06:23 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:23 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:23 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:23 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:23 INFO SparkEnv: Registering MapOutputTracker
+25/08/07 05:06:23 INFO SparkEnv: Registering BlockManagerMaster
+25/08/07 05:06:23 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/08/07 05:06:23 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/08/07 05:06:23 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/08/07 05:06:23 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-8ef0153f-9281-4939-877c-0d79c7e5ab84
+25/08/07 05:06:23 INFO Executor: Starting executor ID driver on host ip-10-3-57-10.us-west-2.compute.internal
+25/08/07 05:06:23 INFO Executor: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:06:23 INFO Executor: Java version 17.0.13
+25/08/07 05:06:23 INFO SparkEnv: Registering OutputCommitCoordinator
+25/08/07 05:06:23 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/08/07 05:06:23 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@8aebd54 for default.
+25/08/07 05:06:24 INFO log: Logging initialized @31470ms to org.eclipse.jetty.util.log.Slf4jLog
+25/08/07 05:06:24 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+25/08/07 05:06:24 INFO ExecutorPluginContainer: Initialized executor component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:06:24 INFO Utils: resolved command to be run: ArraySeq(getconf, PAGESIZE)
+25/08/07 05:06:25 INFO ErrorEventListener: Configured monitoring unexpected Java module errors with a throttling threshold of 5 unique events per 10 minutes
+25/08/07 05:06:25 INFO JfrStreamingManager: Started JFR stream JDK17 HMR
+25/08/07 05:06:25 INFO RawConfigSingleton$: Successfully loaded DB_CONF into RawConfigSingleton.
+25/08/07 05:06:25 INFO log: Logging initialized @33374ms to org.eclipse.jetty.util.log.Slf4jLog
+25/08/07 05:06:25 INFO GlobalConf$$anon$1: 
+Location Old Values:
+  - shardAlias: None
+  - realShardName: null
+  - realShardNameOpt: None
+  - shardName: null
+  - shardNameOpt: None
+  - branch: development
+  - region: us-west-2
+  - runtime: default
+  - workerNamePrefix: null
+  - deploymentMode: development
+  - shardCloud: unknown
+
+Location New Values:
+  - location: 
+    
+25/08/07 05:06:26 WARN NativeMemoryWatchdog: Native memory watchdog is disabled by conf.
+25/08/07 05:06:26 INFO TaskSchedulerImpl: Preemption disabled in FIFO scheduling mode.
+25/08/07 05:06:26 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46617.
+25/08/07 05:06:26 INFO NettyBlockTransferService: Server created on ip-10-3-57-10.us-west-2.compute.internal:46617
+25/08/07 05:06:26 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/08/07 05:06:26 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 46617, None)
+25/08/07 05:06:26 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-3-57-10.us-west-2.compute.internal:46617 with 434.4 MiB RAM, BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 46617, None)
+25/08/07 05:06:26 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 46617, None)
+25/08/07 05:06:26 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 46617, None)
+25/08/07 05:06:27 INFO JettyUtils: Start Jetty 10.3.57.10:4040 for SparkUI
+25/08/07 05:06:28 INFO Server: jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.13+11-LTS
+25/08/07 05:06:28 INFO Server: Started @36264ms
+25/08/07 05:06:29 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:29 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:29 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:29 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:29 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:29 INFO JettyUtils: Start Jetty 10.3.57.10:4040 for SparkUI
+25/08/07 05:06:29 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+25/08/07 05:06:29 INFO AbstractConnector: Started ServerConnector@e01beef{HTTP/1.1, (http/1.1)}{10.3.57.10:4041}
+25/08/07 05:06:29 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+25/08/07 05:06:30 INFO Server: jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.13+11-LTS
+25/08/07 05:06:30 INFO SparkContext: Running Spark version 3.5.2
+25/08/07 05:06:30 INFO SparkContext: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:06:30 INFO SparkContext: Java version 17.0.13
+25/08/07 05:06:30 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@40971c34{/,null,AVAILABLE,@Spark}
+25/08/07 05:06:30 INFO ResourceUtils: ==============================================================
+25/08/07 05:06:30 INFO ResourceUtils: No custom resources configured for spark.driver.
+25/08/07 05:06:30 INFO ResourceUtils: ==============================================================
+25/08/07 05:06:30 INFO SparkContext: Submitted application: pyspark-shell
+25/08/07 05:06:30 INFO Server: Started @38244ms
+25/08/07 05:06:30 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+25/08/07 05:06:30 INFO ResourceProfile: Limiting resource is cpu
+25/08/07 05:06:30 INFO ResourceProfileManager: Added ResourceProfile id: 0
+25/08/07 05:06:31 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:31 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:31 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:31 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:31 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:31 INFO JvmCrashLogger: Past JVM crashes: detected 0, logged 0, and skipped 0 already logged
+25/08/07 05:06:31 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+25/08/07 05:06:31 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+25/08/07 05:06:31 INFO AbstractConnector: Started ServerConnector@4da6c640{HTTP/1.1, (http/1.1)}{10.3.57.10:4042}
+25/08/07 05:06:31 INFO Utils: Successfully started service 'SparkUI' on port 4042.
+25/08/07 05:06:32 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@534a8bd9{/,null,AVAILABLE,@Spark}
+25/08/07 05:06:33 ERROR SparkConnectService: Could not start Spark Connect GRPC service
+java.io.IOException: Failed to bind to address 0.0.0.0/0.0.0.0:15002
+	at grpc_shaded.io.grpc.netty.NettyServer.start(NettyServer.java:333)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:185)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:94)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.startGRPCService(SparkConnectService.scala:459)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.start(SparkConnectService.scala:468)
+	at org.apache.spark.sql.connect.SparkConnectPlugin$$anon$1.init(SparkConnectPlugin.scala:100)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.$anonfun$driverPlugins$1(PluginContainer.scala:57)
+	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:293)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:293)
+	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:290)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.<init>(PluginContainer.scala:50)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:235)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:200)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:938)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:61)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:397)
+	at py4j.Gateway.invoke(Gateway.java:257)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:199)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:119)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: grpc_shaded.io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+25/08/07 05:06:33 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.sql.connect.SparkConnectPlugin.
+25/08/07 05:06:33 INFO DLTDebugger: Registered DLTDebuggerEndpoint at endpoint dlt-debugger
+25/08/07 05:06:34 INFO Utils: Successfully started service 'sparkDriver' on port 44097.
+25/08/07 05:06:34 INFO LocalSparkConnectService: Adjusted permissions on /databricks/sparkconnect/grpc.sock: chown:1 chmod:0
+25/08/07 05:06:34 INFO SparkEnv: Registering MapOutputTracker
+25/08/07 05:06:35 INFO SparkEnv: Registering BlockManagerMaster
+25/08/07 05:06:35 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+25/08/07 05:06:35 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+25/08/07 05:06:35 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+25/08/07 05:06:35 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:06:35 INFO DiskBlockManager: Created local directory at /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-c7e9a390-8712-43a3-8d04-64b730c048a5
+25/08/07 05:06:35 INFO SparkEnv: Registering OutputCommitCoordinator
+25/08/07 05:06:35 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:35 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:35 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:35 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:35 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:35 WARN MetricsSystem: Using default name SparkStatusTracker for source because neither spark.metrics.namespace nor spark.app.id is set.
+25/08/07 05:06:36 INFO Executor: Starting executor ID driver on host ip-10-3-57-10.us-west-2.compute.internal
+25/08/07 05:06:36 INFO Executor: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:06:36 INFO Executor: Java version 17.0.13
+25/08/07 05:06:36 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/08/07 05:06:36 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@2b8ac60b for default.
+25/08/07 05:06:36 INFO ErrorEventListener: Configured monitoring unexpected Java module errors with a throttling threshold of 5 unique events per 10 minutes
+25/08/07 05:06:36 INFO JfrStreamingManager: Started JFR stream JDK17 HMR
+25/08/07 05:06:36 ERROR SparkConnectService: Could not start Spark Connect GRPC service
+java.io.IOException: Failed to bind to address 0.0.0.0/0.0.0.0:15002
+	at grpc_shaded.io.grpc.netty.NettyServer.start(NettyServer.java:333)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:185)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:94)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.startGRPCService(SparkConnectService.scala:459)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.start(SparkConnectService.scala:468)
+	at org.apache.spark.sql.connect.SparkConnectPlugin$$anon$1.init(SparkConnectPlugin.scala:100)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.$anonfun$driverPlugins$1(PluginContainer.scala:57)
+	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:293)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:293)
+	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:290)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.<init>(PluginContainer.scala:50)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:235)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:200)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:938)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:61)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:397)
+	at py4j.Gateway.invoke(Gateway.java:257)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:199)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:119)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: grpc_shaded.io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+25/08/07 05:06:36 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.sql.connect.SparkConnectPlugin.
+25/08/07 05:06:36 INFO DLTDebugger: Registered DLTDebuggerEndpoint at endpoint dlt-debugger
+25/08/07 05:06:36 INFO ExecutorPluginContainer: Initialized executor component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:06:37 INFO Utils: resolved command to be run: ArraySeq(getconf, PAGESIZE)
+25/08/07 05:06:37 INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@40abb739{/,null,STOPPED,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@683d4337{/jobs,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6465948c{/jobs/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@453eb1a2{/jobs/job,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@71c4647d{/jobs/job/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@706a9942{/stages,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@17a60db4{/stages/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@43df1bd4{/stages/stage,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7a66f04{/stages/stage/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5c1947f9{/stages/pool,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@58662dfa{/stages/pool/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3686c215{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@566a0332{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@45226704{/storage,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2b33d62d{/storage/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1c34c671{/storage/rdd,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@35c035cd{/storage/rdd/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1987ca9{/environment,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO LocalSparkConnectService: Adjusted permissions on /databricks/sparkconnect/grpc.sock: chown:1 chmod:0
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@d47ecf0{/environment/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5dd8b769{/executors,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@38c2fe97{/executors/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@16d4b1{/executors/threadDump,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@204a44e2{/executors/threadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@64890ae6{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@fd2139{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@194c0a38{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1267c173{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@29bd0275{/static,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4baf5950{/,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6a3c9503{/api,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6ce0b646{/metrics,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2a937a56{/jobs/job/kill,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2de765bd{/stages/stage/kill,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@26423a95{/metrics/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:37 INFO log: Logging initialized @39338ms to org.eclipse.jetty.util.log.Slf4jLog
+25/08/07 05:06:38 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:06:38 WARN NativeMemoryWatchdog: Native memory watchdog is disabled by conf.
+25/08/07 05:06:38 INFO TaskSchedulerImpl: Preemption disabled in FIFO scheduling mode.
+25/08/07 05:06:38 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:38 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:38 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:38 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:38 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:38 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34601.
+25/08/07 05:06:38 INFO NettyBlockTransferService: Server created on ip-10-3-57-10.us-west-2.compute.internal:34601
+25/08/07 05:06:38 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/08/07 05:06:38 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 34601, None)
+25/08/07 05:06:38 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-3-57-10.us-west-2.compute.internal:34601 with 434.4 MiB RAM, BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 34601, None)
+25/08/07 05:06:39 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 34601, None)
+25/08/07 05:06:39 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 34601, None)
+25/08/07 05:06:39 INFO Executor: Starting executor ID driver on host ip-10-3-57-10.us-west-2.compute.internal
+25/08/07 05:06:39 INFO Executor: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:06:39 INFO Executor: Java version 17.0.13
+25/08/07 05:06:40 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/08/07 05:06:40 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@6006260c for default.
+25/08/07 05:06:40 INFO ExecutorPluginContainer: Initialized executor component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:06:40 INFO Utils: resolved command to be run: ArraySeq(getconf, PAGESIZE)
+25/08/07 05:06:40 INFO JettyUtils: Start Jetty 10.3.57.10:4040 for SparkUI
+25/08/07 05:06:41 INFO Server: jetty-9.4.52.v20230823; built: 2023-08-23T19:29:37.669Z; git: abdcda73818a1a2c705da276edb0bf6581e7997e; jvm 17.0.13+11-LTS
+25/08/07 05:06:41 INFO Server: Started @43290ms
+25/08/07 05:06:42 WARN NativeMemoryWatchdog: Native memory watchdog is disabled by conf.
+25/08/07 05:06:42 INFO TaskSchedulerImpl: Preemption disabled in FIFO scheduling mode.
+25/08/07 05:06:42 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44579.
+25/08/07 05:06:42 INFO NettyBlockTransferService: Server created on ip-10-3-57-10.us-west-2.compute.internal:44579
+25/08/07 05:06:42 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/08/07 05:06:42 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 44579, None)
+25/08/07 05:06:42 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-3-57-10.us-west-2.compute.internal:44579 with 434.4 MiB RAM, BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 44579, None)
+25/08/07 05:06:42 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 44579, None)
+25/08/07 05:06:42 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 44579, None)
+25/08/07 05:06:42 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+25/08/07 05:06:42 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+25/08/07 05:06:42 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+25/08/07 05:06:42 INFO AbstractConnector: Started ServerConnector@19894fce{HTTP/1.1, (http/1.1)}{10.3.57.10:4043}
+25/08/07 05:06:42 INFO Utils: Successfully started service 'SparkUI' on port 4043.
+25/08/07 05:06:43 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@145cff30{/,null,AVAILABLE,@Spark}
+25/08/07 05:06:46 ERROR SparkConnectService: Could not start Spark Connect GRPC service
+java.io.IOException: Failed to bind to address 0.0.0.0/0.0.0.0:15002
+	at grpc_shaded.io.grpc.netty.NettyServer.start(NettyServer.java:333)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:185)
+	at grpc_shaded.io.grpc.internal.ServerImpl.start(ServerImpl.java:94)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.startGRPCService(SparkConnectService.scala:459)
+	at org.apache.spark.sql.connect.service.SparkConnectService$.start(SparkConnectService.scala:468)
+	at org.apache.spark.sql.connect.SparkConnectPlugin$$anon$1.init(SparkConnectPlugin.scala:100)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.$anonfun$driverPlugins$1(PluginContainer.scala:57)
+	at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:293)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.collection.TraversableLike.flatMap(TraversableLike.scala:293)
+	at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:290)
+	at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)
+	at org.apache.spark.internal.plugin.DriverPluginContainer.<init>(PluginContainer.scala:50)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:235)
+	at org.apache.spark.internal.plugin.PluginContainer$.apply(PluginContainer.scala:200)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:938)
+	at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:61)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:397)
+	at py4j.Gateway.invoke(Gateway.java:257)
+	at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+	at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:199)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:119)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: grpc_shaded.io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+25/08/07 05:06:46 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.sql.connect.SparkConnectPlugin.
+25/08/07 05:06:46 INFO DLTDebugger: Registered DLTDebuggerEndpoint at endpoint dlt-debugger
+25/08/07 05:06:46 INFO LocalSparkConnectService: Adjusted permissions on /databricks/sparkconnect/grpc.sock: chown:1 chmod:0
+25/08/07 05:06:47 INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@40971c34{/,null,STOPPED,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@146adcdc{/jobs,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1153ca79{/jobs/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@d7bf73a{/jobs/job,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3adcd62e{/jobs/job/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4db5769e{/stages,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@41edc8de{/stages/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1ccaf25d{/stages/stage,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1733024f{/stages/stage/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@84bfa73{/stages/pool,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2ea31200{/stages/pool/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7f306a4d{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@29bca43{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2a04e8c2{/storage,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3522e60a{/storage/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3ae7b65d{/storage/rdd,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4e33a288{/storage/rdd/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3eeac1f2{/environment,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1934ff82{/environment/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@e10ff6f{/executors,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7bf03fe3{/executors/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO DriverPluginContainer: Initialized driver component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7ebb582e{/executors/threadDump,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@71bc999a{/executors/threadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6b5406a5{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@383f7708{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6e689633{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@52527358{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4bb8d5cb{/static,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6e6db8d2{/,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@18b4e049{/api,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO SecurityManager: Changing view acls to: root
+25/08/07 05:06:47 INFO SecurityManager: Changing modify acls to: root
+25/08/07 05:06:47 INFO SecurityManager: Changing view acls groups to: root
+25/08/07 05:06:47 INFO SecurityManager: Changing modify acls groups to: root
+25/08/07 05:06:47 INFO SecurityManager: SecurityManager: authentication is enabled: false; ui acls disabled; users with view permissions: root groups with view permissions: EMPTY; users with modify permissions: root; groups with modify permissions: EMPTY; RPC SSL enabled: false
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@698c09e{/metrics,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@68f7aa7a{/jobs/job/kill,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@26777006{/stages/stage/kill,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4ce5ee1e{/metrics/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:47 INFO Executor: Starting executor ID driver on host ip-10-3-57-10.us-west-2.compute.internal
+25/08/07 05:06:47 INFO Executor: OS info Linux, 5.15.0-1087-aws, amd64
+25/08/07 05:06:47 INFO Executor: Java version 17.0.13
+25/08/07 05:06:48 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+25/08/07 05:06:48 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@474f2fab for default.
+25/08/07 05:06:48 INFO ExecutorPluginContainer: Initialized executor component for plugin org.apache.spark.debugger.DLTDebuggerSparkPlugin.
+25/08/07 05:06:48 INFO Utils: resolved command to be run: ArraySeq(getconf, PAGESIZE)
+25/08/07 05:06:49 INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@534a8bd9{/,null,STOPPED,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4d0e7ff8{/jobs,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@b928e31{/jobs/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@74b0733e{/jobs/job,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@30728388{/jobs/job/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4834243d{/stages,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2825ba00{/stages/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5431d6f3{/stages/stage,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@53e53c34{/stages/stage/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@632a9b55{/stages/pool,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@54869e7b{/stages/pool/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@689af854{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6601d557{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6f0b60a7{/storage,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@26c8b5b3{/storage/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@217806c1{/storage/rdd,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@57322f04{/storage/rdd/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@31ccdbd5{/environment,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@606bb1a6{/environment/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7b0913a3{/executors,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5fafeb32{/executors/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@23371a66{/executors/threadDump,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@45d1216a{/executors/threadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 WARN NativeMemoryWatchdog: Native memory watchdog is disabled by conf.
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4a14b40a{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5ed92f31{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3b603e50{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4245d6f9{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO TaskSchedulerImpl: Preemption disabled in FIFO scheduling mode.
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7778dde0{/static,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1347e0e9{/,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42281.
+25/08/07 05:06:49 INFO NettyBlockTransferService: Server created on ip-10-3-57-10.us-west-2.compute.internal:42281
+25/08/07 05:06:49 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@30613c30{/api,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6871c974{/metrics,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@120dc93a{/jobs/job/kill,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 42281, None)
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5e5a0dfb{/stages/stage/kill,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO BlockManagerMasterEndpoint: Registering block manager ip-10-3-57-10.us-west-2.compute.internal:42281 with 434.4 MiB RAM, BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 42281, None)
+25/08/07 05:06:49 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@274fc84e{/metrics/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:49 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 42281, None)
+25/08/07 05:06:49 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, ip-10-3-57-10.us-west-2.compute.internal, 42281, None)
+25/08/07 05:06:54 INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@145cff30{/,null,STOPPED,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@67a3e162{/jobs,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6c0ca130{/jobs/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3f0ae0d4{/jobs/job,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@45b483cd{/jobs/job/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2dc63334{/stages,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4af8826d{/stages/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@391dd843{/stages/stage,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1fe7fd08{/stages/stage/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@ad0a351{/stages/pool,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@18ed5b3a{/stages/pool/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@fd335c9{/stages/taskThreadDump,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@528cef5a{/stages/taskThreadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@726216c3{/storage,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@353ef843{/storage/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7bfad3dc{/storage/rdd,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@50d9df9c{/storage/rdd/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@47450ad{/environment,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@368f7aac{/environment/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5137afcb{/executors,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@17b74f3b{/executors/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@f43a257{/executors/threadDump,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@787c3aa5{/executors/threadDump/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@398ab5b1{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@e46f0da{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6fca09e{/executors/heapHistogram,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1a9abf95{/executors/heapHistogram/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2e5b97f3{/static,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2de765bd{/,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@59ae7b88{/api,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@867cb7d{/metrics,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@104827c2{/jobs/job/kill,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1554bda2{/stages/stage/kill,null,AVAILABLE,@Spark}
+25/08/07 05:06:54 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@27cfc3a7{/metrics/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:55 INFO SharedState: Scheduler stats enabled.
+25/08/07 05:06:55 INFO DriverResourceMonitor: Driver resource monitor is disabled.
+25/08/07 05:06:55 INFO DriverCapacity: Starting DriverCapacity trackers
+25/08/07 05:06:55 INFO MemoryUsageTracker: Starting MemoryUsageTracker
+25/08/07 05:06:55 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+25/08/07 05:06:55 INFO SharedState: Warehouse path is 'file:/Workspace/Users/labuser11091541_1754532261@vocareum.com/databricks_automl/spark-warehouse'.
+25/08/07 05:06:55 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2151b61d{/storage/iocache,null,AVAILABLE,@Spark}
+25/08/07 05:06:55 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@c6e2e64{/storage/iocache/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:55 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@44b15604{/SQL,null,AVAILABLE,@Spark}
+25/08/07 05:06:55 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@5bfe4cd0{/SQL/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:55 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@37f0af4b{/SQL/execution,null,AVAILABLE,@Spark}
+25/08/07 05:06:55 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@62bd0ff8{/SQL/execution/json,null,AVAILABLE,@Spark}
+25/08/07 05:06:55 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@656b0c52{/static/sql,null,AVAILABLE,@Spark}
+25/08/07 05:06:57 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 73950
+ Duration: 26
+25/08/07 05:06:57 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 74128
+ Duration: 24
+25/08/07 05:06:58 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Humongous Allocation
+ StartTime: 75416
+ Duration: 8
+25/08/07 05:06:59 WARN DynamicSparkConfigUtils: Dynamic Spark configuration is not supported on custom Runtime version, depending on the passed options, some features might not work as expected
+25/08/07 05:06:59 INFO SharedState: Scheduler stats enabled.
+25/08/07 05:06:59 INFO DriverResourceMonitor: Driver resource monitor is disabled.
+25/08/07 05:06:59 INFO DriverCapacity: Starting DriverCapacity trackers
+25/08/07 05:06:59 INFO MemoryUsageTracker: Starting MemoryUsageTracker
+25/08/07 05:07:00 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+25/08/07 05:07:00 INFO SharedState: Warehouse path is 'file:/Workspace/Users/labuser11091541_1754532261@vocareum.com/databricks_automl/spark-warehouse'.
+25/08/07 05:07:00 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@141d58ca{/storage/iocache,null,AVAILABLE,@Spark}
+25/08/07 05:07:00 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4b0a408b{/storage/iocache/json,null,AVAILABLE,@Spark}
+25/08/07 05:07:00 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@58cda18c{/SQL,null,AVAILABLE,@Spark}
+25/08/07 05:07:00 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@215a2d0f{/SQL/json,null,AVAILABLE,@Spark}
+25/08/07 05:07:00 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3c00327b{/SQL/execution,null,AVAILABLE,@Spark}
+25/08/07 05:07:00 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4035259a{/SQL/execution/json,null,AVAILABLE,@Spark}
+25/08/07 05:07:00 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@2c964e6b{/static/sql,null,AVAILABLE,@Spark}
+25/08/07 05:07:01 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 69175
+ Duration: 48
+25/08/07 05:07:02 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 69397
+ Duration: 21
+25/08/07 05:07:02 INFO SharedState: Scheduler stats enabled.
+25/08/07 05:07:02 INFO DriverResourceMonitor: Driver resource monitor is disabled.
+25/08/07 05:07:02 INFO DriverCapacity: Starting DriverCapacity trackers
+25/08/07 05:07:02 INFO MemoryUsageTracker: Starting MemoryUsageTracker
+25/08/07 05:07:02 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+25/08/07 05:07:02 INFO SharedState: Warehouse path is 'file:/Workspace/Users/labuser11091541_1754532261@vocareum.com/databricks_automl/spark-warehouse'.
+25/08/07 05:07:02 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@49153da4{/storage/iocache,null,AVAILABLE,@Spark}
+25/08/07 05:07:02 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@115b953e{/storage/iocache/json,null,AVAILABLE,@Spark}
+25/08/07 05:07:02 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@148d4c09{/SQL,null,AVAILABLE,@Spark}
+25/08/07 05:07:02 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@4048ce52{/SQL/json,null,AVAILABLE,@Spark}
+25/08/07 05:07:02 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@567a5602{/SQL/execution,null,AVAILABLE,@Spark}
+25/08/07 05:07:02 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@42f3fc1a{/SQL/execution/json,null,AVAILABLE,@Spark}
+25/08/07 05:07:02 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3d993b4f{/static/sql,null,AVAILABLE,@Spark}
+25/08/07 05:07:04 WARN DynamicSparkConfigUtils: Dynamic Spark configuration is not supported on custom Runtime version, depending on the passed options, some features might not work as expected
+25/08/07 05:07:05 INFO SharedState: Scheduler stats enabled.
+25/08/07 05:07:05 INFO DriverResourceMonitor: Driver resource monitor is disabled.
+25/08/07 05:07:05 INFO DriverCapacity: Starting DriverCapacity trackers
+25/08/07 05:07:05 INFO MemoryUsageTracker: Starting MemoryUsageTracker
+25/08/07 05:07:05 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+25/08/07 05:07:05 INFO SharedState: Warehouse path is 'file:/Workspace/Users/labuser11091541_1754532261@vocareum.com/databricks_automl/spark-warehouse'.
+25/08/07 05:07:05 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@30ae4a8{/storage/iocache,null,AVAILABLE,@Spark}
+25/08/07 05:07:05 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@26be9d9a{/storage/iocache/json,null,AVAILABLE,@Spark}
+25/08/07 05:07:05 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 72958
+ Duration: 19
+25/08/07 05:07:05 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@1ce9541c{/SQL,null,AVAILABLE,@Spark}
+25/08/07 05:07:05 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@7fee7593{/SQL/json,null,AVAILABLE,@Spark}
+25/08/07 05:07:05 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@6ab3628a{/SQL/execution,null,AVAILABLE,@Spark}
+25/08/07 05:07:05 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@3b0e0c24{/SQL/execution/json,null,AVAILABLE,@Spark}
+25/08/07 05:07:05 INFO ContextHandler: Started o.e.j.s.ServletContextHandler@74895c1{/static/sql,null,AVAILABLE,@Spark}
+25/08/07 05:07:05 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 73139
+ Duration: 26
+25/08/07 05:07:06 WARN DynamicSparkConfigUtils: Dynamic Spark configuration is not supported on custom Runtime version, depending on the passed options, some features might not work as expected
+25/08/07 05:07:08 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 69990
+ Duration: 36
+25/08/07 05:07:08 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 70128
+ Duration: 32
+25/08/07 05:07:09 WARN DynamicSparkConfigUtils: Dynamic Spark configuration is not supported on custom Runtime version, depending on the passed options, some features might not work as expected
+25/08/07 05:07:11 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 88340
+ Duration: 27
+25/08/07 05:07:12 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 88641
+ Duration: 44
+25/08/07 05:07:12 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Humongous Allocation
+ StartTime: 88761
+ Duration: 7
+25/08/07 05:07:13 INFO ProductEventLog: ClTSQVEKR3R5cGUuZ29vZ2xlYXBpcy5jb20vZGF0YWJyaWNrcy5sb2dnaW5nLnByb2R1Y3RldmVudC5FeGVjdXRvckhlYWx0aEV2ZW50EgYIABAAGAESDAiA6dDEBhC+ubqIAyILZGV2ZWxvcG1lbnQqAFi5vLffC3AAehDHWzT/jGJP3JfuefYJ1/6WqgEAwgEHdW5rbm93bsoBAgoAqNH51gMB
+25/08/07 05:07:15 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 83184
+ Duration: 11
+25/08/07 05:07:16 ERROR FuseLogAggregator: 2025/08/07 05:07:15.305260 main.FATAL Mounting file system: Mount: mount: running /usr/bin/fusermount: exit status 1
+25/08/07 05:07:16 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Humongous Allocation
+ StartTime: 84114
+ Duration: 18
+25/08/07 05:07:17 INFO ProductEventLog: ClTSQVEKR3R5cGUuZ29vZ2xlYXBpcy5jb20vZGF0YWJyaWNrcy5sb2dnaW5nLnByb2R1Y3RldmVudC5FeGVjdXRvckhlYWx0aEV2ZW50EgYIABAAGAESCwiF6dDEBhCM+vl/IgtkZXZlbG9wbWVudCoAWLm8t98LcAB6EGeYq/PJaknTnwZlgVXD6jmqAQDCAQd1bmtub3duygECCgCo0fnWAwE=
+25/08/07 05:07:18 ERROR FuseLogAggregator: 2025/08/07 05:07:15.305260 main.FATAL Mounting file system: Mount: mount: running /usr/bin/fusermount: exit status 1
+25/08/07 05:07:18 INFO SparkContext: Invoking stop() from shutdown hook
+25/08/07 05:07:18 INFO SparkContext: SparkContext is stopping with exitCode 0 from run at Executors.java:539.
+25/08/07 05:07:18 INFO HmrNonQueryEventLogger: NQL logging rate limit was initialized to : 1 log lines per call site per second, bypass allow list: AppStatusListener.scala
+25/08/07 05:07:18 INFO DpHmrNonQueryEvent: CtsLMtgLCggIgcn1igYQAQoICMvfrJoBEAEKDQjUob6k//////8BEAEKDQin1d7l+/////8BEAAKDQiTyp6e+/////8BEAEKCAiy3/3JARAACg0I2OvEuf3/////ARAACg0Il+nb8f7/////ARAACg0Ip6e32fr/////ARABCggInLfyigcQAAoNCOC8y/75/////wEQAQoICNywitMBEAAKCAiU1JypBxAACg0I/YvgnPr/////ARAACggI1ZbDqQUQAQoICO23v8oEEAAKDQjpmaOO//////8BEAAKCAiAz8PZBBABCggIq4ytwAYQAAoHCK6j1XIQAAoNCOTehID+/////wEQAAoNCIzK1IH5/////wEQAQoNCN74yp7+/////wEQAQoNCNOjy73//////wEQAAoNCNqR3d3+/////wEQAQoICL2f9fsEEAEKCAjB2MH9ARAACg0I/JWlzfz/////ARAACggIibeN9gIQAAoNCPOgodL4/////wEQAQoICMLk34kFEAEKCAi+iZbNBRAACg0I2NLqhvn/////ARAACggIse37igUQAQoICKjdpewEEAEKDQjAlv2a+P////8BEAAKDQje38nA+P////8BEAAKCAjVi+WaAxAACg0IteOg0Pn/////ARAACg0IupHt0v7/////ARABCggI24Wp4gIQAQoICKSMpM8HEAAKCAjA5++AAhAACg0Im/G4+fn/////ARAACg0I8fGqif//////ARAACg0I+fan0P7/////ARABCg0IzLCP2vr/////ARABCgcI39WgDBABCgcIl+i3SxABCg0I+/WZnv7/////ARABCg0IpdPQ7vj/////ARABCg0IkN6dufr/////ARAACg0IjfS82P7/////ARAACggIkta5ggIQAAoICIDNze4GEAEKCAjYi/PbBRAACggI9If7+wEQAQoNCMuOl7j//////wEQAAoICLSc3fEBEAEKDQj99rLu/f////8BEAAKCAjuso2pAxABCg0IzLebwP3/////ARABCggI4oDotAUQAAoNCM/03LX6/////wEQAAoICLnKiOoBEAAKBgjK2n0QAQoICJXDupgEEAEKCAibseWiBhABCg0IuJqUufz/////ARAACg0I2puDhvz/////ARAACg0I5O6C4f//////ARAACgcIv8qxMBAACg0I/8m63/7/////ARABCg0IzoXDjPz/////ARABCggIt+e3qgcQAAoICL/u/JcDEAEKCAiM7pHnBRABCg0I38zMivv/////ARABCggIm+KIsgMQAAoICIX4nOUDEAAKDQjx1J3n+f////8BEAAKDQjzqJig//////8BEAAKDQixwubQ+f////8BEAAKDQjA1vT+//////8BEAEKDQiu3Z2b//////8BEAAKCAiVjZGLBBAACggIgJCrgAcQAAoICMP0/70GEAEKCAjK2762BhAACg0ImbOr5v3/////ARAACg0I+vmVxvj/////ARAACg0I+vy22vn/////ARAACggI94/aqQUQAQoNCPH6uLD8/////wEQAAoICKqY2LkFEAAKBwiDxfdcEAAKCAjgtrjQARABCg0Il/XOrvj/////ARABCggIvd+WlAYQAAoICIqw1sUFEAEKDQjm1NfB/f////8BEAEKDQjgpfu0/P////8BEAEKCAjI6bjtBhABCg0I15zYw///////ARABCggI4++3+gMQAQoNCMj4jI75/////wEQAAoICLG+jesBEAEKBwi9jt0gEAEKDQj/terq+v////8BEAAKDQiygaLb/f////8BEAEKCAiAo5f+BxAACgcI+PHxOhABCggI2qWSlwcQAAoNCIeH9q78/////wEQAQoNCNn+7sn//////wEQAQoNCLbC/LL//////wEQAQoICIqizb0HEAAKCAiLscXCAhABCggIpqbW9QEQAAoNCPfUvOP//////wEQAAoICNqb0Y4EEAASDAiG6dDEBhDz0L2PASILZGV2ZWxvcG1lbnQqAFiq0K//B3AAehDHWzT/jGJP3JfuefYJ1/6WqgEAwgEHdW5rbm93bsoBAgoAqNH51gMB
+25/08/07 05:07:18 WARN SparkContext: Requesting executors is not supported by current scheduler.
+25/08/07 05:07:18 INFO AbstractConnector: Stopped Spark@34f21017{HTTP/1.1, (http/1.1)}{10.3.57.10:4040}
+25/08/07 05:07:18 INFO SparkUI: Stopped Spark web UI at http://10.3.57.10:4040
+25/08/07 05:07:18 INFO DeadlockDetector: Trigger deadlock detection immediately.
+25/08/07 05:07:18 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 86141
+ Duration: 18
+25/08/07 05:07:18 ERROR FuseLogAggregator: 2025/08/07 05:07:15.305260 main.FATAL Mounting file system: Mount: mount: running /usr/bin/fusermount: exit status 1
+25/08/07 05:07:19 INFO ProductEventLog: ClTSQVEKR3R5cGUuZ29vZ2xlYXBpcy5jb20vZGF0YWJyaWNrcy5sb2dnaW5nLnByb2R1Y3RldmVudC5FeGVjdXRvckhlYWx0aEV2ZW50EgYIABAAGAESDAiH6dDEBhD6xfHzAiILZGV2ZWxvcG1lbnQqAFi5vLffC3AAehDQx1YBWDJGp4NcK8m2HlZcqgEAwgEHdW5rbm93bsoBAgoAqNH51gMB
+25/08/07 05:07:20 ERROR FuseLogAggregator: 2025/08/07 05:07:15.305260 main.FATAL Mounting file system: Mount: mount: running /usr/bin/fusermount: exit status 1
+25/08/07 05:07:20 INFO JfrStreamingManager: Closed JFR stream JDK17 HMR
+25/08/07 05:07:20 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+25/08/07 05:07:21 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+25/08/07 05:07:21 INFO MemoryStore: MemoryStore cleared
+25/08/07 05:07:21 INFO BlockManager: BlockManager stopped
+25/08/07 05:07:21 INFO BlockManagerMaster: BlockManagerMaster stopped
+25/08/07 05:07:21 INFO MetricsSystem: Stopping driver MetricsSystem
+25/08/07 05:07:21 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+25/08/07 05:07:21 INFO HangingDetectorManager: Stopping all hanging detection tasks.
+25/08/07 05:07:21 INFO SparkContext: Successfully stopped SparkContext (Uptime: 73563 ms)
+25/08/07 05:07:21 INFO ShutdownHookManager: Shutdown hook called
+25/08/07 05:07:21 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-7a77bf5f-1d71-4eed-98b7-1d70cff6a011
+25/08/07 05:07:21 INFO ShutdownHookManager: Deleting directory /tmp/spark-07aa5c97-3dd0-4a80-b8cf-9b7be1a61266
+25/08/07 05:07:21 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-7a77bf5f-1d71-4eed-98b7-1d70cff6a011/pyspark-da2a9865-7a7b-4183-ae80-deb861e22e23
+25/08/07 05:07:21 INFO SparkContext: Invoking stop() from shutdown hook
+25/08/07 05:07:21 INFO SparkContext: SparkContext is stopping with exitCode 0 from run at Executors.java:539.
+25/08/07 05:07:21 INFO HmrNonQueryEventLogger: NQL logging rate limit was initialized to : 1 log lines per call site per second, bypass allow list: AppStatusListener.scala
+25/08/07 05:07:21 INFO DpHmrNonQueryEvent: CtsLMtgLCggIgcn1igYQAQoICMvfrJoBEAEKDQjUob6k//////8BEAEKDQin1d7l+/////8BEAAKDQiTyp6e+/////8BEAEKCAiy3/3JARAACg0I2OvEuf3/////ARAACg0Il+nb8f7/////ARAACg0Ip6e32fr/////ARABCggInLfyigcQAAoNCOC8y/75/////wEQAQoICNywitMBEAAKCAiU1JypBxAACg0I/YvgnPr/////ARAACggI1ZbDqQUQAQoICO23v8oEEAAKDQjpmaOO//////8BEAAKCAiAz8PZBBABCggIq4ytwAYQAAoHCK6j1XIQAAoNCOTehID+/////wEQAAoNCIzK1IH5/////wEQAQoNCN74yp7+/////wEQAQoNCNOjy73//////wEQAAoNCNqR3d3+/////wEQAQoICL2f9fsEEAEKCAjB2MH9ARAACg0I/JWlzfz/////ARAACggIibeN9gIQAAoNCPOgodL4/////wEQAQoICMLk34kFEAEKCAi+iZbNBRAACg0I2NLqhvn/////ARAACggIse37igUQAQoICKjdpewEEAEKDQjAlv2a+P////8BEAAKDQje38nA+P////8BEAAKCAjVi+WaAxAACg0IteOg0Pn/////ARAACg0IupHt0v7/////ARABCggI24Wp4gIQAQoICKSMpM8HEAAKCAjA5++AAhAACg0Im/G4+fn/////ARAACg0I8fGqif//////ARAACg0I+fan0P7/////ARABCg0IzLCP2vr/////ARABCgcI39WgDBABCgcIl+i3SxABCg0I+/WZnv7/////ARABCg0IpdPQ7vj/////ARABCg0IkN6dufr/////ARAACg0IjfS82P7/////ARAACggIkta5ggIQAAoICIDNze4GEAEKCAjYi/PbBRAACggI9If7+wEQAQoNCMuOl7j//////wEQAAoICLSc3fEBEAEKDQj99rLu/f////8BEAAKCAjuso2pAxABCg0IzLebwP3/////ARABCggI4oDotAUQAAoNCM/03LX6/////wEQAAoICLnKiOoBEAAKBgjK2n0QAQoICJXDupgEEAEKCAibseWiBhABCg0IuJqUufz/////ARAACg0I2puDhvz/////ARAACg0I5O6C4f//////ARAACgcIv8qxMBAACg0I/8m63/7/////ARABCg0IzoXDjPz/////ARABCggIt+e3qgcQAAoICL/u/JcDEAEKCAiM7pHnBRABCg0I38zMivv/////ARABCggIm+KIsgMQAAoICIX4nOUDEAAKDQjx1J3n+f////8BEAAKDQjzqJig//////8BEAAKDQixwubQ+f////8BEAAKDQjA1vT+//////8BEAEKDQiu3Z2b//////8BEAAKCAiVjZGLBBAACggIgJCrgAcQAAoICMP0/70GEAEKCAjK2762BhAACg0ImbOr5v3/////ARAACg0I+vmVxvj/////ARAACg0I+vy22vn/////ARAACggI94/aqQUQAQoNCPH6uLD8/////wEQAAoICKqY2LkFEAAKBwiDxfdcEAAKCAjgtrjQARABCg0Il/XOrvj/////ARABCggIvd+WlAYQAAoICIqw1sUFEAEKDQjm1NfB/f////8BEAEKDQjgpfu0/P////8BEAEKCAjI6bjtBhABCg0I15zYw///////ARABCggI4++3+gMQAQoNCMj4jI75/////wEQAAoICLG+jesBEAEKBwi9jt0gEAEKDQj/terq+v////8BEAAKDQiygaLb/f////8BEAEKCAiAo5f+BxAACgcI+PHxOhABCggI2qWSlwcQAAoNCIeH9q78/////wEQAQoNCNn+7sn//////wEQAQoNCLbC/LL//////wEQAQoICIqizb0HEAAKCAiLscXCAhABCggIpqbW9QEQAAoNCPfUvOP//////wEQAAoICNqb0Y4EEAASDAiJ6dDEBhDg0b7eAiILZGV2ZWxvcG1lbnQqAFiq0K//B3AAehBnmKvzyWpJ058GZYFVw+o5qgEAwgEHdW5rbm93bsoBAgoAqNH51gMB
+25/08/07 05:07:21 WARN SparkContext: Requesting executors is not supported by current scheduler.
+25/08/07 05:07:21 INFO AbstractConnector: Stopped Spark@e01beef{HTTP/1.1, (http/1.1)}{10.3.57.10:4041}
+25/08/07 05:07:21 INFO SparkUI: Stopped Spark web UI at http://10.3.57.10:4041
+25/08/07 05:07:21 INFO DeadlockDetector: Trigger deadlock detection immediately.
+25/08/07 05:07:21 INFO MemoryUsageTracker: GC notification:
+ Name: G1 Young Generation,
+ Action: end of minor GC,
+ Cause: G1 Evacuation Pause
+ StartTime: 83272
+ Duration: 27
+25/08/07 05:07:22 INFO ProductEventLog: ClTSQVEKR3R5cGUuZ29vZ2xlYXBpcy5jb20vZGF0YWJyaWNrcy5sb2dnaW5nLnByb2R1Y3RldmVudC5FeGVjdXRvckhlYWx0aEV2ZW50EgYIABAAGAESDAiK6dDEBhCbsPfLASILZGV2ZWxvcG1lbnQqAFi5vLffC3AAehBJuXdYn2VKz6gaN/ch16u+qgEAwgEHdW5rbm93bsoBAgoAqNH51gMB
+25/08/07 05:07:24 INFO JfrStreamingManager: Closed JFR stream JDK17 HMR
+25/08/07 05:07:24 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+25/08/07 05:07:24 INFO SparkContext: Invoking stop() from shutdown hook
+25/08/07 05:07:24 WARN JavaUtils: Attempt to delete using native Unix OS command failed for path = /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-02698e1f-de26-4ff5-8bd4-f63c7977c435. Falling back to Java IO way
+java.io.IOException: Failed to delete: /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/blockmgr-02698e1f-de26-4ff5-8bd4-f63c7977c435
+	at org.apache.spark.network.util.JavaUtils.deleteRecursivelyUsingUnixNative(JavaUtils.java:254)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:116)
+	at org.apache.spark.network.util.JavaUtils.deleteRecursively(JavaUtils.java:94)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively(SparkFileUtils.scala:121)
+	at org.apache.spark.util.SparkFileUtils.deleteRecursively$(SparkFileUtils.scala:120)
+	at org.apache.spark.util.Utils$.deleteRecursively(Utils.scala:1266)
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1(DiskBlockManager.scala:392)
+	at org.apache.spark.storage.DiskBlockManager.$anonfun$doStop$1$adapted(DiskBlockManager.scala:388)
+	at scala.collection.IndexedSeqOptimized.foreach(IndexedSeqOptimized.scala:36)
+	at scala.collection.IndexedSeqOptimized.foreach$(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:198)
+	at org.apache.spark.storage.DiskBlockManager.doStop(DiskBlockManager.scala:388)
+	at org.apache.spark.storage.DiskBlockManager.stop(DiskBlockManager.scala:383)
+	at org.apache.spark.storage.BlockManager.stop(BlockManager.scala:2269)
+	at org.apache.spark.SparkEnv.stop(SparkEnv.scala:314)
+	at org.apache.spark.SparkContext.$anonfun$stop$31(SparkContext.scala:3108)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1605)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:3108)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:2986)
+	at org.apache.spark.SparkContext.$anonfun$new$54(SparkContext.scala:1090)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:237)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$2(ShutdownHookManager.scala:211)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:2377)
+	at org.apache.spark.util.SparkShutdownHookManager.$anonfun$runAll$1(ShutdownHookManager.scala:211)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.util.Try$.apply(Try.scala:213)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:211)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:190)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+25/08/07 05:07:24 INFO SparkContext: SparkContext is stopping with exitCode 0 from run at Executors.java:539.
+25/08/07 05:07:24 INFO HmrNonQueryEventLogger: NQL logging rate limit was initialized to : 1 log lines per call site per second, bypass allow list: AppStatusListener.scala
+25/08/07 05:07:24 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+25/08/07 05:07:24 INFO MemoryStore: MemoryStore cleared
+25/08/07 05:07:24 INFO BlockManager: BlockManager stopped
+25/08/07 05:07:24 INFO BlockManagerMaster: BlockManagerMaster stopped
+25/08/07 05:07:24 INFO MetricsSystem: Stopping driver MetricsSystem
+25/08/07 05:07:24 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+25/08/07 05:07:24 INFO HangingDetectorManager: Stopping all hanging detection tasks.
+25/08/07 05:07:24 INFO DpHmrNonQueryEvent: CtsLMtgLCggIgcn1igYQAQoICMvfrJoBEAEKDQjUob6k//////8BEAEKDQin1d7l+/////8BEAAKDQiTyp6e+/////8BEAEKCAiy3/3JARAACg0I2OvEuf3/////ARAACg0Il+nb8f7/////ARAACg0Ip6e32fr/////ARABCggInLfyigcQAAoNCOC8y/75/////wEQAQoICNywitMBEAAKCAiU1JypBxAACg0I/YvgnPr/////ARAACggI1ZbDqQUQAQoICO23v8oEEAAKDQjpmaOO//////8BEAAKCAiAz8PZBBABCggIq4ytwAYQAAoHCK6j1XIQAAoNCOTehID+/////wEQAAoNCIzK1IH5/////wEQAQoNCN74yp7+/////wEQAQoNCNOjy73//////wEQAAoNCNqR3d3+/////wEQAQoICL2f9fsEEAEKCAjB2MH9ARAACg0I/JWlzfz/////ARAACggIibeN9gIQAAoNCPOgodL4/////wEQAQoICMLk34kFEAEKCAi+iZbNBRAACg0I2NLqhvn/////ARAACggIse37igUQAQoICKjdpewEEAEKDQjAlv2a+P////8BEAAKDQje38nA+P////8BEAAKCAjVi+WaAxAACg0IteOg0Pn/////ARAACg0IupHt0v7/////ARABCggI24Wp4gIQAQoICKSMpM8HEAAKCAjA5++AAhAACg0Im/G4+fn/////ARAACg0I8fGqif//////ARAACg0I+fan0P7/////ARABCg0IzLCP2vr/////ARABCgcI39WgDBABCgcIl+i3SxABCg0I+/WZnv7/////ARABCg0IpdPQ7vj/////ARABCg0IkN6dufr/////ARAACg0IjfS82P7/////ARAACggIkta5ggIQAAoICIDNze4GEAEKCAjYi/PbBRAACggI9If7+wEQAQoNCMuOl7j//////wEQAAoICLSc3fEBEAEKDQj99rLu/f////8BEAAKCAjuso2pAxABCg0IzLebwP3/////ARABCggI4oDotAUQAAoNCM/03LX6/////wEQAAoICLnKiOoBEAAKBgjK2n0QAQoICJXDupgEEAEKCAibseWiBhABCg0IuJqUufz/////ARAACg0I2puDhvz/////ARAACg0I5O6C4f//////ARAACgcIv8qxMBAACg0I/8m63/7/////ARABCg0IzoXDjPz/////ARABCggIt+e3qgcQAAoICL/u/JcDEAEKCAiM7pHnBRABCg0I38zMivv/////ARABCggIm+KIsgMQAAoICIX4nOUDEAAKDQjx1J3n+f////8BEAAKDQjzqJig//////8BEAAKDQixwubQ+f////8BEAAKDQjA1vT+//////8BEAEKDQiu3Z2b//////8BEAAKCAiVjZGLBBAACggIgJCrgAcQAAoICMP0/70GEAEKCAjK2762BhAACg0ImbOr5v3/////ARAACg0I+vmVxvj/////ARAACg0I+vy22vn/////ARAACggI94/aqQUQAQoNCPH6uLD8/////wEQAAoICKqY2LkFEAAKBwiDxfdcEAAKCAjgtrjQARABCg0Il/XOrvj/////ARABCggIvd+WlAYQAAoICIqw1sUFEAEKDQjm1NfB/f////8BEAEKDQjgpfu0/P////8BEAEKCAjI6bjtBhABCg0I15zYw///////ARABCggI4++3+gMQAQoNCMj4jI75/////wEQAAoICLG+jesBEAEKBwi9jt0gEAEKDQj/terq+v////8BEAAKDQiygaLb/f////8BEAEKCAiAo5f+BxAACgcI+PHxOhABCggI2qWSlwcQAAoNCIeH9q78/////wEQAQoNCNn+7sn//////wEQAQoNCLbC/LL//////wEQAQoICIqizb0HEAAKCAiLscXCAhABCggIpqbW9QEQAAoNCPfUvOP//////wEQAAoICNqb0Y4EEAASDAiM6dDEBhCglbziASILZGV2ZWxvcG1lbnQqAFiq0K//B3AAehDQx1YBWDJGp4NcK8m2HlZcqgEAwgEHdW5rbm93bsoBAgoAqNH51gMB
+25/08/07 05:07:24 WARN SparkContext: Requesting executors is not supported by current scheduler.
+25/08/07 05:07:24 INFO AbstractConnector: Stopped Spark@4da6c640{HTTP/1.1, (http/1.1)}{10.3.57.10:4042}
+25/08/07 05:07:24 INFO SparkUI: Stopped Spark web UI at http://10.3.57.10:4042
+25/08/07 05:07:24 INFO DeadlockDetector: Trigger deadlock detection immediately.
+25/08/07 05:07:24 INFO SparkContext: Successfully stopped SparkContext (Uptime: 65385 ms)
+25/08/07 05:07:24 INFO ShutdownHookManager: Shutdown hook called
+25/08/07 05:07:24 INFO ShutdownHookManager: Deleting directory /tmp/spark-405b1658-ef35-4dff-9b04-9db49ebdf891
+25/08/07 05:07:24 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-e5c0d700-ff40-4313-900e-8addf9381443
+25/08/07 05:07:24 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-e5c0d700-ff40-4313-900e-8addf9381443/pyspark-4ec69e49-0062-437c-bc40-3a87096bdb56
+25/08/07 05:07:26 INFO SparkContext: Invoking stop() from shutdown hook
+25/08/07 05:07:26 INFO SparkContext: SparkContext is stopping with exitCode 0 from run at Executors.java:539.
+25/08/07 05:07:26 INFO HmrNonQueryEventLogger: NQL logging rate limit was initialized to : 1 log lines per call site per second, bypass allow list: AppStatusListener.scala
+25/08/07 05:07:26 INFO DpHmrNonQueryEvent: CtsLMtgLCggIgcn1igYQAQoICMvfrJoBEAEKDQjUob6k//////8BEAEKDQin1d7l+/////8BEAAKDQiTyp6e+/////8BEAEKCAiy3/3JARAACg0I2OvEuf3/////ARAACg0Il+nb8f7/////ARAACg0Ip6e32fr/////ARABCggInLfyigcQAAoNCOC8y/75/////wEQAQoICNywitMBEAAKCAiU1JypBxAACg0I/YvgnPr/////ARAACggI1ZbDqQUQAQoICO23v8oEEAAKDQjpmaOO//////8BEAAKCAiAz8PZBBABCggIq4ytwAYQAAoHCK6j1XIQAAoNCOTehID+/////wEQAAoNCIzK1IH5/////wEQAQoNCN74yp7+/////wEQAQoNCNOjy73//////wEQAAoNCNqR3d3+/////wEQAQoICL2f9fsEEAEKCAjB2MH9ARAACg0I/JWlzfz/////ARAACggIibeN9gIQAAoNCPOgodL4/////wEQAQoICMLk34kFEAEKCAi+iZbNBRAACg0I2NLqhvn/////ARAACggIse37igUQAQoICKjdpewEEAEKDQjAlv2a+P////8BEAAKDQje38nA+P////8BEAAKCAjVi+WaAxAACg0IteOg0Pn/////ARAACg0IupHt0v7/////ARABCggI24Wp4gIQAQoICKSMpM8HEAAKCAjA5++AAhAACg0Im/G4+fn/////ARAACg0I8fGqif//////ARAACg0I+fan0P7/////ARABCg0IzLCP2vr/////ARABCgcI39WgDBABCgcIl+i3SxABCg0I+/WZnv7/////ARABCg0IpdPQ7vj/////ARABCg0IkN6dufr/////ARAACg0IjfS82P7/////ARAACggIkta5ggIQAAoICIDNze4GEAEKCAjYi/PbBRAACggI9If7+wEQAQoNCMuOl7j//////wEQAAoICLSc3fEBEAEKDQj99rLu/f////8BEAAKCAjuso2pAxABCg0IzLebwP3/////ARABCggI4oDotAUQAAoNCM/03LX6/////wEQAAoICLnKiOoBEAAKBgjK2n0QAQoICJXDupgEEAEKCAibseWiBhABCg0IuJqUufz/////ARAACg0I2puDhvz/////ARAACg0I5O6C4f//////ARAACgcIv8qxMBAACg0I/8m63/7/////ARABCg0IzoXDjPz/////ARABCggIt+e3qgcQAAoICL/u/JcDEAEKCAiM7pHnBRABCg0I38zMivv/////ARABCggIm+KIsgMQAAoICIX4nOUDEAAKDQjx1J3n+f////8BEAAKDQjzqJig//////8BEAAKDQixwubQ+f////8BEAAKDQjA1vT+//////8BEAEKDQiu3Z2b//////8BEAAKCAiVjZGLBBAACggIgJCrgAcQAAoICMP0/70GEAEKCAjK2762BhAACg0ImbOr5v3/////ARAACg0I+vmVxvj/////ARAACg0I+vy22vn/////ARAACggI94/aqQUQAQoNCPH6uLD8/////wEQAAoICKqY2LkFEAAKBwiDxfdcEAAKCAjgtrjQARABCg0Il/XOrvj/////ARABCggIvd+WlAYQAAoICIqw1sUFEAEKDQjm1NfB/f////8BEAEKDQjgpfu0/P////8BEAEKCAjI6bjtBhABCg0I15zYw///////ARABCggI4++3+gMQAQoNCMj4jI75/////wEQAAoICLG+jesBEAEKBwi9jt0gEAEKDQj/terq+v////8BEAAKDQiygaLb/f////8BEAEKCAiAo5f+BxAACgcI+PHxOhABCggI2qWSlwcQAAoNCIeH9q78/////wEQAQoNCNn+7sn//////wEQAQoNCLbC/LL//////wEQAQoICIqizb0HEAAKCAiLscXCAhABCggIpqbW9QEQAAoNCPfUvOP//////wEQAAoICNqb0Y4EEAASDAiO6dDEBhC6/YDGAiILZGV2ZWxvcG1lbnQqAFiq0K//B3AAehBJuXdYn2VKz6gaN/ch16u+qgEAwgEHdW5rbm93bsoBAgoAqNH51gMB
+25/08/07 05:07:26 WARN SparkContext: Requesting executors is not supported by current scheduler.
+25/08/07 05:07:26 INFO AbstractConnector: Stopped Spark@19894fce{HTTP/1.1, (http/1.1)}{10.3.57.10:4043}
+25/08/07 05:07:26 INFO SparkUI: Stopped Spark web UI at http://10.3.57.10:4043
+25/08/07 05:07:26 INFO DeadlockDetector: Trigger deadlock detection immediately.
+25/08/07 05:07:26 INFO JfrStreamingManager: Closed JFR stream JDK17 HMR
+25/08/07 05:07:26 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+25/08/07 05:07:26 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+25/08/07 05:07:26 INFO MemoryStore: MemoryStore cleared
+25/08/07 05:07:26 INFO BlockManager: BlockManager stopped
+25/08/07 05:07:26 INFO BlockManagerMaster: BlockManagerMaster stopped
+25/08/07 05:07:26 INFO MetricsSystem: Stopping driver MetricsSystem
+25/08/07 05:07:27 INFO HangingDetectorManager: Stopping all hanging detection tasks.
+25/08/07 05:07:27 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+25/08/07 05:07:27 INFO SparkContext: Successfully stopped SparkContext (Uptime: 66811 ms)
+25/08/07 05:07:27 INFO ShutdownHookManager: Shutdown hook called
+25/08/07 05:07:27 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-dea1fb80-21cf-432a-b4e6-c563b8e17b67/pyspark-d96b4488-d03a-4a36-86ed-496eebea07e2
+25/08/07 05:07:27 INFO ShutdownHookManager: Deleting directory /local_disk0/blockmgr-d3f322a8-0fdf-4027-9191-15e5e622b586/spark-dea1fb80-21cf-432a-b4e6-c563b8e17b67
+25/08/07 05:07:27 INFO ShutdownHookManager: Deleting directory /tmp/spark-574606ff-548c-4775-bee4-b8888353edee
+25/08/07 05:07:28 INFO JfrStreamingManager: Closed JFR stream JDK17 HMR
+25/08/07 05:07:28 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
